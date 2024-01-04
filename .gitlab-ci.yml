@@ -1,0 +1,16 @@
+image: docker:19.03.12
+services:
+  - docker:19.03.12-dind
+
+stages:
+  - test
+
+variables:
+  CONTAINER_RELEASE_IMAGE: $CI_REGISTRY_IMAGE:latest
+
+checker:
+    stage: test
+    image:
+        name: gitlab.cs.pub.ro:5050/apd/tema3:latest
+    script:
+        - echo ""
