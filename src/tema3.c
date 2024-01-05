@@ -44,6 +44,8 @@ int files_requested_count = 0;
 file_info files_owned[MAX_FILES];
 int files_owned_count = 0;
 
+int numtasks;
+
 void *download_thread_func(void *arg)
 {
     int rank = *(int*) arg;
@@ -81,9 +83,9 @@ void *download_thread_func(void *arg)
         printf("Chunk %d: owner %d\n", current_file.chunks[0].index, chosen_owner);
 
         char chunk_request[15] = "CHUNK REQ";
-        MPI_Send(chunk_request, 15, MPI_CHAR, chosen_owner, 0, MPI_COMM_WORLD);
-        MPI_Send(files_requested[i].filename, MAX_FILENAME, MPI_CHAR, chosen_owner, 0, MPI_COMM_WORLD);
-        MPI_Send(&current_file.chunks[0].index, 1, MPI_INT, chosen_owner, 0, MPI_COMM_WORLD);
+        MPI_Send(chunk_request, 15, MPI_CHAR, chosen_owner, 5, MPI_COMM_WORLD);
+        MPI_Send(files_requested[i].filename, MAX_FILENAME, MPI_CHAR, chosen_owner, 5, MPI_COMM_WORLD);
+        MPI_Send(&current_file.chunks[0].index, 1, MPI_INT, chosen_owner, 5, MPI_COMM_WORLD);
     }
 
     return NULL;
@@ -94,24 +96,38 @@ void *upload_thread_func(void *arg)
     int rank = *(int*) arg;
     printf("Hello from upload thread %d\n", rank);
 
-    if(rank != 1)
-        return NULL;
+    int src = 1;
+    for(int i = 2; i < numtasks; i++) {
+        src = src | i;
+    }
 
-    while (1)
-    {
+    printf("src: %d\n", src);
+
+    // if(rank != 1)
+    //     return NULL;
+
+    while (1) {    
         MPI_Status status;
-        char request[15];
+        char request[15] = "";
 
-        MPI_Recv(request, 15, MPI_CHAR, MPI_ANY_SOURCE, 0, MPI_COMM_WORLD, &status);
+        MPI_Recv(request, 15, MPI_CHAR, MPI_ANY_SOURCE, 5, MPI_COMM_WORLD, &status);
 
-        if(strcmp(request, "CHUNK REQ") == 0) {
+        printf("Request received: %s from process %d\n", request, status.MPI_SOURCE);
+
+        if (strcmp(request, "CHUNK REQ") == 0) {
             char filename[MAX_FILENAME];
             int chunk_index = -1;
 
-            MPI_Recv(filename, MAX_FILENAME, MPI_CHAR, status.MPI_SOURCE, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-            MPI_Recv(&chunk_index, 1, MPI_INT, status.MPI_SOURCE, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+            MPI_Recv(filename, MAX_FILENAME, MPI_CHAR, status.MPI_SOURCE, 5, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+            MPI_Recv(&chunk_index, 1, MPI_INT, status.MPI_SOURCE, 5, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 
             printf("CHUNK REQ from peer %d for file %s chunk %d\n", status.MPI_SOURCE, filename, chunk_index);
+
+            for(int i = 0; i < files_owned_count; i++) {
+                if (strcmp(files_owned[i].filename, filename) == 0) {
+                    printf("chunk %d: %s\n", chunk_index, files_owned[i].chunks[chunk_index].hash);
+                }
+            }
         }
     }
     
@@ -196,6 +212,8 @@ void tracker(int numtasks, int rank) {
 }
 
 void peer(int numtasks, int rank) {
+    numtasks = numtasks;
+
     char infilename[MAX_FILENAME] = "in";
     char rank_str[5];
     snprintf(rank_str, sizeof(int), "%d", rank);
