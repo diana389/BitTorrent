@@ -6,3 +6,4 @@ run:
 	
 clean:
 	rm -rf tema3
+	rm -r client*
