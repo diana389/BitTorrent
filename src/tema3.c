@@ -57,7 +57,7 @@ void *download_thread_func(void *arg)
     for(int i = 0; i < files_requested_count; i++) {
         printf("Peer %d requests file %s\n", rank, files_requested[i].filename);
 
-        int oweners_count = 0;
+        int owners_count = 0;
         int owners[100];
 
         char owners_request[15] = "OWNERS REQ";
@@ -86,6 +86,22 @@ void *download_thread_func(void *arg)
         MPI_Send(chunk_request, 15, MPI_CHAR, chosen_owner, 5, MPI_COMM_WORLD);
         MPI_Send(files_requested[i].filename, MAX_FILENAME, MPI_CHAR, chosen_owner, 5, MPI_COMM_WORLD);
         MPI_Send(&current_file.chunks[0].index, 1, MPI_INT, chosen_owner, 5, MPI_COMM_WORLD);
+
+        char hash[HASH_SIZE + 1];
+        MPI_Recv(hash, HASH_SIZE, MPI_CHAR, chosen_owner, 15, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+        printf("Chunk %d: %s\n", current_file.chunks[0].index, hash);
+
+        int chunk_index = current_file.chunks[0].index;
+        files_requested[i].chunks_recv[chunk_index] = chosen_owner;
+        files_requested[i].chunks_count++;
+        strcpy(files_requested[i].chunks[chunk_index].hash, hash);
+        files_requested[i].chunks[chunk_index].index = chunk_index;
+
+        hash[HASH_SIZE - 1] = '\n';
+        hash[HASH_SIZE] = '\0';
+        FILE *output = fopen(files_requested[i].filename, "w");
+        fwrite(hash, sizeof(char), HASH_SIZE, output);
+        fclose(output);
     }
 
     return NULL;
@@ -125,7 +141,9 @@ void *upload_thread_func(void *arg)
 
             for(int i = 0; i < files_owned_count; i++) {
                 if (strcmp(files_owned[i].filename, filename) == 0) {
-                    printf("chunk %d: %s\n", chunk_index, files_owned[i].chunks[chunk_index].hash);
+                    // printf("chunk %d: %s\n", chunk_index, files_owned[i].chunks[chunk_index].hash);
+
+                    MPI_Send(files_owned[i].chunks[chunk_index].hash, HASH_SIZE, MPI_CHAR, status.MPI_SOURCE, 15, MPI_COMM_WORLD);
                 }
             }
         }
