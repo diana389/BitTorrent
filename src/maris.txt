@@ -1,0 +1,1328 @@
+mpirun --oversubscribe -np 6 ./tema3
+in2.txt
+in5.txt
+in4.txt
+in1.txt
+in3.txt
+Peer 1 owns chunk 5180b9534fe42f8b91bd013114846a62 from file file1 index 0
+Peer 1 owns chunk 757a63268c3b848690ade56a63630739 from file file1 index 1
+Peer 1 owns chunk 122630ce0978fd69fbbeee009249752c from file file1 index 2
+Peer 1 owns chunk 8932155658af80cb9162ac1d36392eb7 from file file1 index 3
+Peer 1 owns chunk fff5ec09d205380ca6dc9e7b40ddb8ea from file file1 index 4
+Peer 1 owns chunk 500f3f017585780261ec9fe61531f67e from file file1 index 5
+Peer 1 owns chunk 04e4a66c1c75c2a6eaac0f7c2a10ad0d from file file1 index 6
+Peer 1 owns chunk c88e751835c6ea14c85965fd4e8eff45 from file file1 index 7
+Peer 1 owns chunk 3d530fc518d75e2f72c9925599557abf from file file1 index 8
+Peer 1 owns chunk 35c3d64236a1b7ede35a447be560bece from file file1 index 9
+Peer 1 owns chunk 76f6331541fb90562b171a01736e4dfc from file file1 index 10
+Peer 1 owns chunk 60b9e54cf7a0056147d0132ecf50df8a from file file1 index 11
+Peer 1 owns chunk 28580fff66d485cf63ebbb276b9b740e from file file1 index 12
+Peer 1 owns chunk 6ad42021369025f425664991bce26021 from file file1 index 13
+Peer 1 owns chunk 4589964f5415041784deb3004c77174f from file file1 index 14
+Peer 1 owns chunk 4ab9b22b1201b87ffe2da5495acdc2f9 from file file1 index 15
+Peer 1 owns chunk 15ba7316137f989c7c5c7c2af90958e7 from file file1 index 16
+Peer 1 owns chunk d86bd4895e5c958a1d52824c317e0156 from file file1 index 17
+Peer 1 owns chunk 7b2be3aea0e6ea758424363ca6cab99c from file file1 index 18
+Peer 1 owns chunk 07f72dd179717ac3a7aac902f77e3b10 from file file1 index 19
+Peer 1 owns chunk 9f295a11cf631a4509fdde5982f43f7e from file file1 index 20
+Peer 1 owns chunk 0037cf7b88a3fa85c4493c1d0e596f45 from file file1 index 21
+Peer 1 owns chunk 870f3527840a1e6dba4f0b56963165ef from file file1 index 22
+Peer 1 owns chunk d5eef15edaeeac73f9bc71af5716409b from file file1 index 23
+Peer 5 requests file file1
+Peer 5 requests file file4
+Peer 5 requests file file5
+Peer 1 owns chunk 44596c785e95a9785ca58f93571b4ba5 from file file1 index 24
+Peer 1 owns chunk 05cca5c2f8ee8aaebee5c8fa4b73f1b6 from file file1 index 25
+Peer 1 owns chunk 6eea5d61d02b495f412df9a1182bad7b from file file1 index 26
+Peer 1 owns chunk a345997452e54bb37e01f4266e6f28dc from file file1 index 27
+Peer 1 owns chunk 64cd020d6951075772a3ad60bcdf63ea from file file1 index 28
+Peer 1 owns chunk 222d3dbe3ed60180889fa00fa3ca2c6a from file file1 index 29
+Peer 1 owns chunk 238076a897910054348f9c3e1279e037 from file file1 index 30
+Peer 1 owns chunk 0b5a4594af7b79e563d6b4d03acd5529 from file file1 index 31
+Peer 1 owns chunk 1f117ec84a52403d6312a104986d371a from file file1 index 32
+Peer 1 owns chunk 9316bd8e80afdddd2877461a80ca9e4a from file file1 index 33
+Peer 1 owns chunk 55d42176726e4fc1d71a0886135b6ff1 from file file1 index 34
+Peer 1 owns chunk fb220a480940b7ae1e9b9341d4c3ba94 from file file1 index 35
+Peer 1 owns chunk f52bf6f7e3d5d274896662f18820bfe6 from file file1 index 36
+Peer 1 owns chunk 3ab20b6e2426ca2bf45394004d1625e8 from file file1 index 37
+Peer 1 owns chunk cabcc184a2890b0172a53c302e73a40f from file file1 index 38
+Peer 1 owns chunk 5b07e054812ba1b560904172a0878b78 from file file1 index 39
+Peer 1 owns chunk b47cbf8c142f97a2e6fe7853ca842d64 from file file1 index 40
+Peer 1 owns chunk b63cabda615d02ff576e6b8d35ebc3cb from file file1 index 41
+Peer 1 owns chunk 183099a7e1fb0bf3581094ab50a65a34 from file file1 index 42
+Peer 1 owns chunk 9ee0aad41d66424dfdfb51cb838faf7b from file file1 index 43
+Peer 1 owns chunk f152ffb8ea13d0fbec2d138c06d33bdb from file file1 index 44
+Peer 1 owns chunk 2754ee3980c5d4ff2451d54077fe4490 from file file1 index 45
+Peer 2 requests file file6
+Peer 1 owns chunk 0e41242b440b11661ad03a029bf4f735 from file file1 index 46
+Peer 1 owns chunk caa187c9b172d25a2a678c53f7313a0a from file file1 index 47
+Peer 1 owns chunk fe3443f0031ee80d8782aa67c69a6a9b from file file1 index 48
+Peer 1 owns chunk 854428c83b6db932c8c73b67aa3dd1b0 from file file1 index 49
+Peer 1 owns chunk 0511cbe30cb7aaa4cb3302df658ccf54 from file file1 index 50
+Peer 1 owns chunk 63c0a46ae8cf8dc2d66f722aa1c62faf from file file1 index 51
+Peer 1 owns chunk f40c8503ca2aae5dfe48004cb4234330 from file file1 index 52
+Peer 1 owns chunk 3774fee94e67548fd8ecf18a891a440c from file file1 index 53
+Peer 1 owns chunk 38fef38211d865f845dd67a54c0f1160 from file file1 index 54
+Peer 1 owns chunk fddfe27370ded1f8d63469580585990f from file file1 index 55
+Peer 1 owns chunk 68f9ec428e0dc0e9860d5b6a1beefa19 from file file1 index 56
+Peer 1 owns chunk e6d324f7071d74ed68a86db9bc464447 from file file1 index 57
+Peer 1 owns chunk af2c1ba92726ebf582a1ac51b15fd449 from file file1 index 58
+Peer 1 owns chunk a6d4f5b2a965b6efcbde37f2dfb21c10 from file file1 index 59
+Peer 1 owns chunk 2f6537f57eb1a3175100c7e5a00f0582 from file file1 index 60
+Peer 1 owns chunk ed2a490518f6d6198cd1eab9e988d140 from file file1 index 61
+Peer 1 owns chunk 3aa2b4f8bd5b308a221a6646daa1b618 from file file1 index 62
+Peer 1 owns chunk c3adfb1e1b0391ba481401e8f90f606b from file file1 index 63
+Peer 1 owns chunk 6bed9abcdeb60d78141c5806dd853a51 from file file1 index 64
+Peer 1 owns chunk 1205f124aaada490ca854944057fcd41 from file file1 index 65
+Peer 1 owns chunk a77b2fce1b149039f56f2bff16bc154a from file file1 index 66
+Peer 1 owns chunk f718e3401b760fc8ce34d562844c959c from file file1 index 67
+Peer 1 owns chunk d6b953ee6f84bfcf7a4a8fef16d6ccc3 from file file1 index 68
+Peer 1 owns chunk db4471f5459ad1aa14bcc119f792d19f from file file1 index 69
+Peer 1 owns chunk 27dfb5aac48ff6b946c4cf026d7f11e7 from file file1 index 70
+Peer 1 owns chunk 1e2b1218bd45b43df5c57a62bea3288b from file file1 index 71
+Peer 1 owns chunk 81819a37f23858b3b906086a75af5b90 from file file1 index 72
+Peer 1 owns chunk ac079076db57825d2e122ec961af7d86 from file file1 index 73
+Peer 1 owns chunk 5631ea89b8c961088bf5e07fefe6043b from file file1 index 74
+Peer 1 owns chunk d4a1f9dd24ef08206219b4763cd8abd9 from file file1 index 75
+Peer 1 owns chunk 6a62a8b429853e1431635ae4513b01cd from file file1 index 76
+Peer 1 owns chunk 21f265854dfa2ed549e1cd93ce3f2cec from file file1 index 77
+Peer 1 owns chunk f1d5a8622047d16293a5dd04536f36c4 from file file1 index 78
+Peer 1 owns chunk bca3e425b4acf7fff9429ec041f7bbd1 from file file1 index 79
+Peer 1 owns chunk 38372a0100d22bbd263e4c9fdb6585a0 from file file2 index 0
+Peer 1 owns chunk 52ac474e043f8180cd643c9392a87ef4 from file file2 index 1
+Peer 1 owns chunk f9ec084336020d133934fb8c35ac7348 from file file2 index 2
+Peer 1 owns chunk 2798183b8cf16b3dddbb8598e5a522c9 from file file2 index 3
+Peer 1 owns chunk 62a54fa5fd5c27f495006989fa34ba1d from file file2 index 4
+Peer 1 owns chunk e87414568402b8fe650a1f1dd11cc974 from file file2 index 5
+Peer 1 owns chunk a7d2f6d2e1098392d3d2f0b020b5b16c from file file2 index 6
+Peer 1 owns chunk cc5f0faeb3cbde30d0301c863ab3e157 from file file2 index 7
+Peer 1 owns chunk d790c5d4677816fdc17f7defc9d244dc from file file2 index 8
+Peer 1 owns chunk 0e657a74ea55ed9492cb763b0d8afc24 from file file2 index 9
+Peer 1 owns chunk 33f52cabf6c6d638b29506f227f34704 from file file2 index 10
+Peer 1 owns chunk 2e2695f1252071db3c339eeab19be8fd from file file2 index 11
+Peer 1 owns chunk e2b5ace1b935d57423dd71c350c7b7dc from file file2 index 12
+Peer 1 owns chunk 09e82966f0f595ffb5cfd120c5382526 from file file2 index 13
+Peer 1 owns chunk 460b9c414142972dad70717233f101b6 from file file2 index 14
+Peer 1 owns chunk 8fb8ea01358a85295d9d3ac911b6b9f6 from file file2 index 15
+Peer 1 owns chunk 5151ed183d9266919be0e3c7abff70fe from file file2 index 16
+Peer 1 owns chunk d5956bf2f9cc67a0b38b3056e1789435 from file file2 index 17
+Peer 1 owns chunk 41dccb298391b27730afbc2d3d73d2d7 from file file2 index 18
+Peer 1 owns chunk 8c2bb75a8a0e5a6d53e0588a0710af68 from file file2 index 19
+Peer 1 owns chunk 210581de46b6caca49c8f54bc7ca541e from file file2 index 20
+Peer 1 owns chunk 1ba169c2f831d2d60504abca04b3b623 from file file2 index 21
+Peer 1 owns chunk f3f9f8064d4acfbfecce71d61ac0e426 from file file2 index 22
+Peer 1 owns chunk d60924e792da1e2d2b472eae28a5b0cd from file file2 index 23
+Peer 1 owns chunk c39ba8762fdcf8dd9b53c792b5546e18 from file file2 index 24
+Peer 1 owns chunk 0795ac23f89b45d46497796ff2c55aee from file file2 index 25
+Peer 1 owns chunk a043dd259687044f5bda95ff44b05f98 from file file2 index 26
+Peer 1 owns chunk c8ba396d5e55eed32489379adbcd5a18 from file file2 index 27
+Peer 1 owns chunk 274f4108d7027e151a502a5ba7528df5 from file file2 index 28
+Peer 1 owns chunk 51c2b8fe4156fa8cb808aef2ed07b949 from file file2 index 29
+Peer 1 owns chunk 227f324365b692961c7d8b1acf9f8bae from file file2 index 30
+Peer 1 owns chunk 6353d449f78750a4d35ee1c8e1ec0a53 from file file2 index 31
+Peer 1 owns chunk 90244aa242e7804ce82bab7fd5c254ea from file file2 index 32
+Peer 1 owns chunk 1b4aec81e0608344953caea580553304 from file file2 index 33
+Peer 1 owns chunk 07d67d3b1757abf2b259613bc46ac9f8 from file file2 index 34
+Peer 1 owns chunk 32802a823dfb025933e4d23b2e90ca73 from file file2 index 35
+Peer 1 owns chunk c1ebb8dd25ea1f4a0a502f78b95b398b from file file2 index 36
+Peer 1 owns chunk 51f22fd8226ef9548631c7b574d3cbf2 from file file2 index 37
+Peer 1 owns chunk 6648d5e71afe15e3d2c79c15ca4b7219 from file file2 index 38
+Peer 1 owns chunk a0356166ac55e2cf8e7e1069b55398a1 from file file2 index 39
+Peer 1 owns chunk a6c65cc5914662347e12263506f08c4a from file file2 index 40
+Peer 1 owns chunk 30d05280cdf904e861b98b373edb2d32 from file file2 index 41
+Peer 1 owns chunk d47cbb971012c39edb90f4399fe15d48 from file file2 index 42
+Peer 1 owns chunk 521707a75df9699a0e7aeeb2370c9ca3 from file file2 index 43
+Peer 1 owns chunk f37d33003760ddafa8d328b13a98166a from file file2 index 44
+Peer 1 owns chunk 4c5d1d69dca1acb56f88fcb13e9e5dba from file file2 index 45
+Peer 1 owns chunk 48c83ee4ea50374400ad052aa342a4dd from file file2 index 46
+Peer 1 owns chunk 6f4dc687465d15997532941f032aa556 from file file2 index 47
+Peer 1 owns chunk b2557ce5dc8050e12ffb0c9a84555ac7 from file file2 index 48
+Peer 1 owns chunk 06e1ecd924a1793252b07a15b4447db7 from file file2 index 49
+Peer 1 owns chunk 5ac5470a209691f7865e47b7dff34a1b from file file2 index 50
+Peer 1 owns chunk 860f9b5e2d450209a5510e38913da429 from file file2 index 51
+Peer 1 owns chunk 63673845f24549d3dc1d6081ec2ad415 from file file2 index 52
+Peer 1 owns chunk 2dfa1aea7baa56cde1a6d030c85fec9e from file file2 index 53
+Peer 1 owns chunk 396e9f2f877f0c722a10aa45eeac33a9 from file file2 index 54
+Peer 1 owns chunk 6c7adf64afe00bf7baad842ae795472b from file file2 index 55
+Peer 1 owns chunk ad29507add8ba062998c15229b38d1f7 from file file2 index 56
+Peer 1 owns chunk 6e376995b8456317b9f33e703a177eac from file file2 index 57
+Peer 1 owns chunk 0327638f982945e81535f7811391f78f from file file2 index 58
+Peer 1 owns chunk 3951b3defbd86ea507a001b6533ecccc from file file2 index 59
+Peer 2 owns chunk c412622829885df5531d4f078c8a39a5 from file file3 index 0
+Peer 1 requests file file7
+Peer 4 requests file file2
+Peer 2 owns chunk cab1aade7c729cf5cd68bfd5cc95790b from file file3 index 1
+Peer 3 requests file file4
+Peer 2 owns chunk 0f9bc16d9d39884aacb3b3012be85831 from file file3 index 2
+Peer 2 owns chunk e6fb7066ffe348888298ec0cbeed79e5 from file file3 index 3
+Peer 2 owns chunk eb4be6b1df264a07d5c157f79fade253 from file file3 index 4
+Peer 2 owns chunk 1ce6806a7dc85025bc36a75bd266e9f5 from file file3 index 5
+Peer 2 owns chunk 262c8d6a5d7cdde102831d3fa06ce600 from file file3 index 6
+Peer 2 owns chunk 766f8b91241de149f2c1db2e6a3bf680 from file file3 index 7
+Peer 2 owns chunk 027b0bb82bd71f19e493563b6b82debe from file file3 index 8
+Peer 2 owns chunk bd4fd713a96012ed52c7cfe59272240a from file file3 index 9
+Peer 2 owns chunk fdb67cc9270ea86faf84ed77644f002d from file file3 index 10
+Peer 2 owns chunk 8f59252238a3e0ed412c6f9f36c4ec00 from file file3 index 11
+Peer 2 owns chunk afb1e0e4e7326dde25c136d5a3b58aa6 from file file3 index 12
+Peer 2 owns chunk 25130f76c36b52564dbc47ccefe8c45f from file file3 index 13
+Peer 2 owns chunk 23ec2c87ce6070df3b1e1e83628430c5 from file file3 index 14
+Peer 2 owns chunk c21a62a706f55dd8843c09f9e7f501c0 from file file3 index 15
+Peer 2 owns chunk 55363372730356d5024d922d5f4bd075 from file file3 index 16
+Peer 2 owns chunk e9a78f54c2f562130df87d9d77da7df0 from file file3 index 17
+Peer 2 owns chunk 493ef49af878b63f30fc13b96e29d9f8 from file file3 index 18
+Peer 2 owns chunk d0c9a6c639757f35731ff435ffea9ff3 from file file3 index 19
+Peer 2 owns chunk de7a2e62f4c87f4032e7600504f8c9f7 from file file3 index 20
+Peer 2 owns chunk 05f6150d257460a608d25adc72e535f3 from file file3 index 21
+Peer 2 owns chunk ef504306be432c6ff870af2f805f878d from file file3 index 22
+Peer 2 owns chunk 8bdf22ba87c0d5745ca28b3679ddc400 from file file3 index 23
+Peer 2 owns chunk 5b6234e0bb73d556164e638456d54e21 from file file3 index 24
+Peer 2 owns chunk 019bfbf1f340ee8902bba5fcd592e733 from file file3 index 25
+Peer 2 owns chunk 97590388c370741f22f62e158b178cab from file file3 index 26
+Peer 2 owns chunk cf039fd3b38366b3261254b09af9b8e6 from file file3 index 27
+Peer 2 owns chunk 07c0ea859d3c783012ce2f6ba77ba3a1 from file file3 index 28
+Peer 2 owns chunk ca3555649a2a5b8ac8396821fd0de8dd from file file3 index 29
+Peer 2 owns chunk 0608ec3eba7f72341077faf91e22901c from file file3 index 30
+Peer 2 owns chunk f6c88b2a4b85d404f4da2d5c469aaed0 from file file3 index 31
+Peer 2 owns chunk 8a53e6e0c76e2e1f8fc89254241810cb from file file3 index 32
+Peer 2 owns chunk 270c05227911d2f196e34c96731aa964 from file file3 index 33
+Peer 2 owns chunk 049b3dd5a68b61ba7e204e17df9f7e20 from file file3 index 34
+Peer 2 owns chunk e666917534bd01c0d5582633146a7d88 from file file3 index 35
+Peer 2 owns chunk c741fd514a762a7466af7e6884e182d1 from file file3 index 36
+Peer 2 owns chunk 288d1862185b40884c6dc8fc106857b0 from file file3 index 37
+Peer 2 owns chunk a01c839d758744f7d9c3e0bb867947c2 from file file3 index 38
+Peer 2 owns chunk 21bb85ca2606f8ada549a8014e672ca7 from file file3 index 39
+Peer 2 owns chunk 7531347e132bb327a676075dfe0913c1 from file file3 index 40
+Peer 2 owns chunk 24363d0c5334d57aae98a71aa86433b3 from file file3 index 41
+Peer 2 owns chunk 192f71c0cf22d1ab29cfd704b744f4b0 from file file3 index 42
+Peer 2 owns chunk 54a7d1383d7dbd7ad00c950f3f20a490 from file file3 index 43
+Peer 2 owns chunk 5b1f59857bd0c51b437bb3abe26bde57 from file file3 index 44
+Peer 2 owns chunk 7da00954cde503f0037c5a3c03ea49bf from file file3 index 45
+Peer 2 owns chunk f6a5351c1062c32c67ec281f93314f0a from file file3 index 46
+Peer 2 owns chunk bf03d1a777a9d1a9c124424bfedbe2fa from file file3 index 47
+Peer 2 owns chunk 437d67de99afb81058dff5c7bc1bcafc from file file3 index 48
+Peer 2 owns chunk bb8ecb62f43814b769a4f0f05b3cef04 from file file3 index 49
+Peer 2 owns chunk 7d43b09c1c8bfe254f0c4a1984ab464a from file file3 index 50
+Peer 2 owns chunk 4ba75fd5772fedcd70ecf41695935b1b from file file3 index 51
+Peer 2 owns chunk 3de78db834008d528b95396030167171 from file file3 index 52
+Peer 2 owns chunk 4783e5a4a5ddb730e6eeb03d8b17fe20 from file file3 index 53
+Peer 2 owns chunk 5a79c5a289713f30c82244c7bf06de1b from file file3 index 54
+Peer 2 owns chunk b9a25f2cfef7068ac5ffdb9bbe76a52e from file file3 index 55
+Peer 2 owns chunk 55dd5c2f1e80da4601d17947e4dd0a9b from file file3 index 56
+Peer 2 owns chunk 74cac2b309eb6f25b3aa0d89c3c18511 from file file3 index 57
+Peer 2 owns chunk 6d370f976b688a23bcfd08587bf8f0c7 from file file3 index 58
+Peer 2 owns chunk de03455a9740772b96385f8b54ac6748 from file file3 index 59
+Peer 2 owns chunk 403e4fa9df61e8c7bf2fd56c1153696c from file file3 index 60
+Peer 2 owns chunk a7ca76280d58a08fcbe2a1a6643654cd from file file3 index 61
+Peer 2 owns chunk f7d1e0b0f36445940e42a94b8b1d3e5b from file file3 index 62
+Peer 2 owns chunk 5dd185aa5d251ae0574e19df3a6a1a0a from file file3 index 63
+Peer 2 owns chunk a2e18ef620a6a9a48645548703589c95 from file file3 index 64
+Peer 2 owns chunk cf6a2ca16495365be088e713c7328fb9 from file file3 index 65
+Peer 2 owns chunk 4ff455759875d15e4af47fa86d4eb407 from file file3 index 66
+Peer 2 owns chunk 40f1d53812eb5747869242e8300fadfa from file file3 index 67
+Peer 2 owns chunk c3b019ffbdbf0c063486e5ae9c2ff9b3 from file file3 index 68
+Peer 2 owns chunk 921fd56d817dd5aeee1f75fdd69eff8c from file file3 index 69
+Peer 2 owns chunk 84a9d5860dab38b11cda92f0c7598984 from file file3 index 70
+Peer 2 owns chunk c778c7f4716613e412fcfe67b9f791ab from file file3 index 71
+Peer 2 owns chunk 71bfcfd2b342ca92a0d4dcf2c36a00be from file file3 index 72
+Peer 2 owns chunk a4c32ff06055cf2e1aa72997d9e0869d from file file3 index 73
+Peer 2 owns chunk fdd4c885295506ffd95290a7ac7d4500 from file file3 index 74
+Peer 2 owns chunk ec96d46ba6edb8ee50789522fc6cefa4 from file file4 index 0
+Peer 2 owns chunk d5b32508728166c69e96791c7578d471 from file file4 index 1
+Peer 2 owns chunk 00a0fff95dcc238b10da20768c742314 from file file4 index 2
+Peer 2 owns chunk 1ac629149f0a7f25e76a6a763b3e611a from file file4 index 3
+Peer 2 owns chunk aa2dc54fa57b36ab354692aee148e0bf from file file4 index 4
+Peer 2 owns chunk 690d7657608d3742ef8ba5db5d2d9ea8 from file file4 index 5
+Peer 2 owns chunk 1e24754bbdeae19a86ed0d8c975c9d83 from file file4 index 6
+Peer 2 owns chunk 2a0240f271fb924f3e3370f4c8f22e80 from file file4 index 7
+Peer 2 owns chunk a406401f1ec1e759162047a4f5369e22 from file file4 index 8
+Peer 2 owns chunk 7a77f86bd43f1b023d6bc5f64e755a5e from file file4 index 9
+Peer 2 owns chunk d02da1c8c122e1d5b8650b194e1b6810 from file file4 index 10
+Peer 2 owns chunk 35be0bcb5a4c0cc3509e0c42dd618806 from file file4 index 11
+Peer 2 owns chunk 87102d21c67647554fa9e4d9e4b0c62d from file file4 index 12
+Peer 2 owns chunk 4bdc1611a8c9dc4098f261f54f8051b5 from file file4 index 13
+Peer 2 owns chunk 93e9f215b3edc8cda9c67e7ba75d60cb from file file4 index 14
+Peer 2 owns chunk 76cd7a7f37160c2fcd6697b66aa1b671 from file file4 index 15
+Peer 2 owns chunk 5dc0587df6fb90a4a4c5ea84344b51d1 from file file4 index 16
+Peer 2 owns chunk 0aab2bd13e673224b34b841081c9c3a8 from file file4 index 17
+Peer 2 owns chunk 79a3f834b078d8b1f43dfb5b80fb288b from file file4 index 18
+Peer 2 owns chunk c95c4bf6454cc395448d138fc3a68cf4 from file file4 index 19
+Peer 2 owns chunk 0a69d9d591c00378d3bc3ccb6bca5f26 from file file4 index 20
+Peer 2 owns chunk f879581f8dcecbc1286698b859944eb3 from file file4 index 21
+Peer 2 owns chunk 4ebc5f1eb7216ae2d59fa8b5f8af5547 from file file4 index 22
+Peer 2 owns chunk a1aafea7d3cdcb9d79fa4098e362c2bc from file file4 index 23
+Peer 2 owns chunk 49c92bc5dc11ace349a317e13f340adc from file file4 index 24
+Peer 2 owns chunk 44d3f792d4aa976a0617d8abfb5b3192 from file file4 index 25
+Peer 2 owns chunk 3277e13de09af981e77832e13a109a67 from file file4 index 26
+Peer 2 owns chunk 056a71379fcd0585d0ac377422e52623 from file file4 index 27
+Peer 2 owns chunk b6a6c621add56996ed54f975508af752 from file file4 index 28
+Peer 2 owns chunk 907e0f4f81b2c8dbce3e67e490dce8a4 from file file4 index 29
+Peer 3 owns chunk a5e19996c1171df36003dbc1471379a3 from file file5 index 0
+Peer 3 owns chunk 3106c2790098fbd7de77cae807e01065 from file file5 index 1
+Peer 3 owns chunk 5bf0da2290ee79cfb63611c914574baa from file file5 index 2
+Peer 3 owns chunk f40980198c7f949e92b92c9c033a7557 from file file5 index 3
+Peer 3 owns chunk 5241668ea2ae0fc1a11c37c556756663 from file file5 index 4
+Peer 3 owns chunk d184bdfdd610764c0fa67ca809c84fce from file file5 index 5
+Peer 3 owns chunk d39b299b785d55b134c58a83ac03a1f9 from file file5 index 6
+Peer 3 owns chunk a055989b550e295e71b799fa5a46055d from file file5 index 7
+Peer 3 owns chunk c6050890b3b7577a47945c4da599a9f5 from file file5 index 8
+Peer 3 owns chunk 10c9a9507224f20f3c6a0e4c837f13eb from file file5 index 9
+Peer 3 owns chunk d148cffc9df4183c3e3ccde547ebbf93 from file file5 index 10
+Peer 3 owns chunk 7f860fd6c464562eac21dd2c9203f7b9 from file file5 index 11
+Peer 3 owns chunk 17d0fafa2e33da94486bb205787e786c from file file5 index 12
+Peer 3 owns chunk fcda15c4eeb455f6c8f1951c61685a83 from file file5 index 13
+Peer 3 owns chunk ed0014892de849c6d8f8a26dfd80d616 from file file5 index 14
+Peer 3 owns chunk 23b1938af8c3663f4ae4bb7aa47ba33e from file file5 index 15
+Peer 3 owns chunk 0888750012ad0077d512384eefd56e8a from file file5 index 16
+Peer 3 owns chunk a5519353adbf2d4ff68ca0423931bf73 from file file5 index 17
+Peer 3 owns chunk 3ef3511aa71a72f23ba60964cb8eb77d from file file5 index 18
+Peer 3 owns chunk 3f54ac2456b37b6a1e1728add4d86675 from file file5 index 19
+Peer 3 owns chunk 29fd83b55dc2da628640cf0d7b0b71c8 from file file5 index 20
+Peer 3 owns chunk 05502ac0bbfd2fd6979e95b66c09893d from file file5 index 21
+Peer 3 owns chunk 69e2814b157e5cc0c2072dcaadf1ddd1 from file file5 index 22
+Peer 3 owns chunk a8579c327dc48677956a5cfc4f3778fe from file file5 index 23
+Peer 3 owns chunk 628a01004e1f0c474bbad0bdc70275a2 from file file5 index 24
+Peer 3 owns chunk 40e6ef158f3c8cfa89eeb2d2a3a95cdd from file file5 index 25
+Peer 3 owns chunk 7628cde68e727b68c86f6a381cee6dc8 from file file5 index 26
+Peer 3 owns chunk 193e52fcef6f2f3a74e07ed6f3053a29 from file file5 index 27
+Peer 3 owns chunk d23e6d79469e43fbcc61b6e18592bba2 from file file5 index 28
+Peer 3 owns chunk 10c52b028247233cf5d9ea7a93f2f5a5 from file file5 index 29
+Peer 3 owns chunk c4ddeabd7e2afbcb93eec6e466906980 from file file5 index 30
+Peer 3 owns chunk df3549235650a4a3014dc8f80d2eb2d5 from file file5 index 31
+Peer 3 owns chunk 9e708bab3460ee1973731d2c18f40195 from file file5 index 32
+Peer 3 owns chunk 878a3856b5769df5e88bbb9600f96bda from file file5 index 33
+Peer 3 owns chunk 020516a04ee62001f88b7102be2cc236 from file file5 index 34
+Peer 3 owns chunk c03f1dc5dcd65416571550096af6779a from file file5 index 35
+Peer 3 owns chunk 2f381aec440f38c0f4d25b5e902f9064 from file file5 index 36
+Peer 3 owns chunk ea8f3a2f76a4bb3ee9e80a85f4a31194 from file file5 index 37
+Peer 3 owns chunk f4ff2e756ea67b8740c554da33a918af from file file5 index 38
+Peer 3 owns chunk 23c2856761da9a3a295673ca4b58f589 from file file5 index 39
+Peer 3 owns chunk f40801e5ec3d48fc54051b54db077662 from file file5 index 40
+Peer 3 owns chunk 3844d9a02d7ef99726e1fd17399af93d from file file5 index 41
+Peer 3 owns chunk 2214b73aeb98b4ddbcbfca4995b0c5e9 from file file5 index 42
+Peer 3 owns chunk 332062ddf027c77f05cd6e9c5c4f1259 from file file5 index 43
+Peer 3 owns chunk 36d021aa61507c52bbec682a08aa3a50 from file file5 index 44
+Peer 3 owns chunk 4346f5d3cbab04c140e07979ddb2f2fb from file file5 index 45
+Peer 3 owns chunk 62b2915151d4a61cc3f9b97ce305d6fb from file file5 index 46
+Peer 3 owns chunk 850be9b50a4ee3c1880415ab9472a208 from file file5 index 47
+Peer 3 owns chunk cb4392272a765a74b038828c52b1e7e7 from file file5 index 48
+Peer 3 owns chunk 513b8d211b8df6f33c878268083963e5 from file file5 index 49
+Peer 3 owns chunk 86044406c6311b593fcea7e7f83cbbfa from file file6 index 0
+Peer 3 owns chunk 568626c0fa625affcdbaa5d305b766a1 from file file6 index 1
+Peer 3 owns chunk 12f3643b742e86b4ea2869d2b0127400 from file file6 index 2
+Peer 3 owns chunk f549afee51af659cddd6997ccfabee41 from file file6 index 3
+Peer 3 owns chunk 6c3181ad051c829e25c3b979ca07128a from file file6 index 4
+Peer 3 owns chunk 1a110d807d7b32e0bfc472c52d269671 from file file6 index 5
+Peer 3 owns chunk 7d5d26328982b27a264be13611619606 from file file6 index 6
+Peer 3 owns chunk 45d9bff47c6745cb575c41768e00aa92 from file file6 index 7
+Peer 3 owns chunk 5caf03a0872bbfa5e6aa6b4a807a9a2e from file file6 index 8
+Peer 3 owns chunk 9f4b4b127fe9d6646d97b0eb0cfd5743 from file file6 index 9
+Peer 3 owns chunk 447d9798ae76c304d574de495da0b138 from file file6 index 10
+Peer 3 owns chunk b158e857930b064b466c5110e658acca from file file6 index 11
+Peer 3 owns chunk 77c9b8d364ee385de1497d85fdf4c7d9 from file file6 index 12
+Peer 3 owns chunk 8d8a9e76ca64f59daa79a847dc8000f0 from file file6 index 13
+Peer 3 owns chunk 0ebb7acf4a54f9b85f650c9fce18461b from file file6 index 14
+Peer 3 owns chunk 849838cca95fb9f4dcc80ec95e3f5989 from file file6 index 15
+Peer 3 owns chunk ded4929ff42a0bd52fdc35f4d17ca930 from file file6 index 16
+Peer 3 owns chunk 74dbd4d545821246a3a5be407214bdb3 from file file6 index 17
+Peer 3 owns chunk 35f5bd1c89af587a2a1fa98ada079683 from file file6 index 18
+Peer 3 owns chunk 676e607ea09fa0855a5ecb70336bf16d from file file6 index 19
+Peer 3 owns chunk 2fef99416f4879b3095fef082c02f614 from file file6 index 20
+Peer 3 owns chunk e0db07175f9226deefbaf569d28f44ee from file file6 index 21
+Peer 3 owns chunk 6e16d2049f1978b7cdd405c1874a71a6 from file file6 index 22
+Peer 3 owns chunk a7aa5dbb18fa134e7bd70e4e30b8dd0f from file file6 index 23
+Peer 3 owns chunk 5678ff55828e1ca0b1feae47bd9e97e1 from file file6 index 24
+Peer 3 owns chunk bddc7fc50e3fe65d5808460203d74c06 from file file6 index 25
+Peer 3 owns chunk 6865a538f6db5af51dc2e9319051870f from file file6 index 26
+Peer 3 owns chunk 7a62daf4daaef0da1fc8b2d6c8452313 from file file6 index 27
+Peer 3 owns chunk d4ad8c8980960ff2238fc952c648699e from file file6 index 28
+Peer 3 owns chunk 5fdaea280ca7f0cdb38624ca28d1aa75 from file file6 index 29
+Peer 3 owns chunk 71706f119e35ba28523a8f5e67405bbc from file file6 index 30
+Peer 3 owns chunk e536250ab2c0438c8ef7f334e64a16b0 from file file6 index 31
+Peer 3 owns chunk c0dbae80aadf4f323b1a67e40da0e80e from file file6 index 32
+Peer 3 owns chunk a39cf5e3d871ccc4b0d897e2005dd582 from file file6 index 33
+Peer 3 owns chunk cd2972921052c03f2eb6b8b6b92e0fda from file file6 index 34
+Peer 3 owns chunk 330ef74419f71b10e1e934f7768e5332 from file file6 index 35
+Peer 3 owns chunk bd3a6286972acb5acc387425a77ecde6 from file file6 index 36
+Peer 3 owns chunk 5669cff09bf113fe661bb624a2273681 from file file6 index 37
+Peer 3 owns chunk 5b50418a547a62f580bc9a5213adbe21 from file file6 index 38
+Peer 3 owns chunk f0375ee29a7787219e74c44d0bccd6b4 from file file6 index 39
+Peer 3 owns chunk 128d8ec65ebe10b54a21c6af4e71ce1f from file file6 index 40
+Peer 3 owns chunk 027475e1a40b567b3b7163e5410f2eb1 from file file6 index 41
+Peer 3 owns chunk af3df4af0cd6568a1fa95fcaf30363b9 from file file6 index 42
+Peer 3 owns chunk 05b2f5c64302433d85dafec6e8899d7b from file file6 index 43
+Peer 3 owns chunk 6b0c298852cdc8a93a94eb77d64b4df9 from file file6 index 44
+Peer 3 owns chunk 83b75fdc0d120731896f30f22ce089ca from file file6 index 45
+Peer 3 owns chunk f419f39d13141de15b743a065e69bccc from file file6 index 46
+Peer 3 owns chunk eba883297c796abac2d80e9a9d22c73c from file file6 index 47
+Peer 3 owns chunk 4e9cf578f4cb56badfa25511aa2dec6a from file file6 index 48
+Peer 3 owns chunk c52d660adae86e30e2fce17e111ca3ef from file file6 index 49
+Peer 3 owns chunk c06dbec86ad287e0e3a20b81e704a420 from file file6 index 50
+Peer 3 owns chunk 2cd9094d4a726c39b76686ee929842b3 from file file6 index 51
+Peer 3 owns chunk 3428a4fed8405b36d12f93be170764fa from file file6 index 52
+Peer 3 owns chunk a910e79a9ca7abd3c1b240ded9fda7f1 from file file6 index 53
+Peer 3 owns chunk 0fbd137c407ad76fd206a3148da5a6b7 from file file6 index 54
+Peer 3 owns chunk ecd7373f9472f3b773908b2ad929f5c1 from file file6 index 55
+Peer 3 owns chunk 43bbc09f0e8bc179e03dcf1c20b55a0f from file file6 index 56
+Peer 3 owns chunk ce7414a4adf008b43125591f8f5d54ab from file file6 index 57
+Peer 3 owns chunk 4740eecf4a94677ea4d584ffe5c62b37 from file file6 index 58
+Peer 3 owns chunk e61696c437d010b8b0ce3f693355b646 from file file6 index 59
+Peer 4 owns chunk 5180b9534fe42f8b91bd013114846a62 from file file1 index 0
+Peer 4 owns chunk 757a63268c3b848690ade56a63630739 from file file1 index 1
+Peer 4 owns chunk 122630ce0978fd69fbbeee009249752c from file file1 index 2
+Peer 4 owns chunk 8932155658af80cb9162ac1d36392eb7 from file file1 index 3
+Peer 4 owns chunk fff5ec09d205380ca6dc9e7b40ddb8ea from file file1 index 4
+Peer 4 owns chunk 500f3f017585780261ec9fe61531f67e from file file1 index 5
+Peer 4 owns chunk 04e4a66c1c75c2a6eaac0f7c2a10ad0d from file file1 index 6
+Peer 4 owns chunk c88e751835c6ea14c85965fd4e8eff45 from file file1 index 7
+Peer 4 owns chunk 3d530fc518d75e2f72c9925599557abf from file file1 index 8
+Peer 4 owns chunk 35c3d64236a1b7ede35a447be560bece from file file1 index 9
+Peer 4 owns chunk 76f6331541fb90562b171a01736e4dfc from file file1 index 10
+Peer 4 owns chunk 60b9e54cf7a0056147d0132ecf50df8a from file file1 index 11
+Peer 4 owns chunk 28580fff66d485cf63ebbb276b9b740e from file file1 index 12
+Peer 4 owns chunk 6ad42021369025f425664991bce26021 from file file1 index 13
+Peer 4 owns chunk 4589964f5415041784deb3004c77174f from file file1 index 14
+Peer 4 owns chunk 4ab9b22b1201b87ffe2da5495acdc2f9 from file file1 index 15
+Peer 4 owns chunk 15ba7316137f989c7c5c7c2af90958e7 from file file1 index 16
+Peer 4 owns chunk d86bd4895e5c958a1d52824c317e0156 from file file1 index 17
+Peer 4 owns chunk 7b2be3aea0e6ea758424363ca6cab99c from file file1 index 18
+Peer 4 owns chunk 07f72dd179717ac3a7aac902f77e3b10 from file file1 index 19
+Peer 4 owns chunk 9f295a11cf631a4509fdde5982f43f7e from file file1 index 20
+Peer 4 owns chunk 0037cf7b88a3fa85c4493c1d0e596f45 from file file1 index 21
+Peer 4 owns chunk 870f3527840a1e6dba4f0b56963165ef from file file1 index 22
+Peer 4 owns chunk d5eef15edaeeac73f9bc71af5716409b from file file1 index 23
+Peer 4 owns chunk 44596c785e95a9785ca58f93571b4ba5 from file file1 index 24
+Peer 4 owns chunk 05cca5c2f8ee8aaebee5c8fa4b73f1b6 from file file1 index 25
+Peer 4 owns chunk 6eea5d61d02b495f412df9a1182bad7b from file file1 index 26
+Peer 4 owns chunk a345997452e54bb37e01f4266e6f28dc from file file1 index 27
+Peer 4 owns chunk 64cd020d6951075772a3ad60bcdf63ea from file file1 index 28
+Peer 4 owns chunk 222d3dbe3ed60180889fa00fa3ca2c6a from file file1 index 29
+Peer 4 owns chunk 238076a897910054348f9c3e1279e037 from file file1 index 30
+Peer 4 owns chunk 0b5a4594af7b79e563d6b4d03acd5529 from file file1 index 31
+Peer 4 owns chunk 1f117ec84a52403d6312a104986d371a from file file1 index 32
+Peer 4 owns chunk 9316bd8e80afdddd2877461a80ca9e4a from file file1 index 33
+Peer 4 owns chunk 55d42176726e4fc1d71a0886135b6ff1 from file file1 index 34
+Peer 4 owns chunk fb220a480940b7ae1e9b9341d4c3ba94 from file file1 index 35
+Peer 4 owns chunk f52bf6f7e3d5d274896662f18820bfe6 from file file1 index 36
+Peer 4 owns chunk 3ab20b6e2426ca2bf45394004d1625e8 from file file1 index 37
+Peer 4 owns chunk cabcc184a2890b0172a53c302e73a40f from file file1 index 38
+Peer 4 owns chunk 5b07e054812ba1b560904172a0878b78 from file file1 index 39
+Peer 4 owns chunk b47cbf8c142f97a2e6fe7853ca842d64 from file file1 index 40
+Peer 4 owns chunk b63cabda615d02ff576e6b8d35ebc3cb from file file1 index 41
+Peer 4 owns chunk 183099a7e1fb0bf3581094ab50a65a34 from file file1 index 42
+Peer 4 owns chunk 9ee0aad41d66424dfdfb51cb838faf7b from file file1 index 43
+Peer 4 owns chunk f152ffb8ea13d0fbec2d138c06d33bdb from file file1 index 44
+Peer 4 owns chunk 2754ee3980c5d4ff2451d54077fe4490 from file file1 index 45
+Peer 4 owns chunk 0e41242b440b11661ad03a029bf4f735 from file file1 index 46
+Peer 4 owns chunk caa187c9b172d25a2a678c53f7313a0a from file file1 index 47
+Peer 4 owns chunk fe3443f0031ee80d8782aa67c69a6a9b from file file1 index 48
+Peer 4 owns chunk 854428c83b6db932c8c73b67aa3dd1b0 from file file1 index 49
+Peer 4 owns chunk 0511cbe30cb7aaa4cb3302df658ccf54 from file file1 index 50
+Peer 4 owns chunk 63c0a46ae8cf8dc2d66f722aa1c62faf from file file1 index 51
+Peer 4 owns chunk f40c8503ca2aae5dfe48004cb4234330 from file file1 index 52
+Peer 4 owns chunk 3774fee94e67548fd8ecf18a891a440c from file file1 index 53
+Peer 4 owns chunk 38fef38211d865f845dd67a54c0f1160 from file file1 index 54
+Peer 4 owns chunk fddfe27370ded1f8d63469580585990f from file file1 index 55
+Peer 4 owns chunk 68f9ec428e0dc0e9860d5b6a1beefa19 from file file1 index 56
+Peer 4 owns chunk e6d324f7071d74ed68a86db9bc464447 from file file1 index 57
+Peer 4 owns chunk af2c1ba92726ebf582a1ac51b15fd449 from file file1 index 58
+Peer 4 owns chunk a6d4f5b2a965b6efcbde37f2dfb21c10 from file file1 index 59
+Peer 4 owns chunk 2f6537f57eb1a3175100c7e5a00f0582 from file file1 index 60
+Peer 4 owns chunk ed2a490518f6d6198cd1eab9e988d140 from file file1 index 61
+Peer 4 owns chunk 3aa2b4f8bd5b308a221a6646daa1b618 from file file1 index 62
+Peer 4 owns chunk c3adfb1e1b0391ba481401e8f90f606b from file file1 index 63
+Peer 4 owns chunk 6bed9abcdeb60d78141c5806dd853a51 from file file1 index 64
+Peer 4 owns chunk 1205f124aaada490ca854944057fcd41 from file file1 index 65
+Peer 4 owns chunk a77b2fce1b149039f56f2bff16bc154a from file file1 index 66
+Peer 4 owns chunk f718e3401b760fc8ce34d562844c959c from file file1 index 67
+Peer 4 owns chunk d6b953ee6f84bfcf7a4a8fef16d6ccc3 from file file1 index 68
+Peer 4 owns chunk db4471f5459ad1aa14bcc119f792d19f from file file1 index 69
+Peer 4 owns chunk 27dfb5aac48ff6b946c4cf026d7f11e7 from file file1 index 70
+Peer 4 owns chunk 1e2b1218bd45b43df5c57a62bea3288b from file file1 index 71
+Peer 4 owns chunk 81819a37f23858b3b906086a75af5b90 from file file1 index 72
+Peer 4 owns chunk ac079076db57825d2e122ec961af7d86 from file file1 index 73
+Peer 4 owns chunk 5631ea89b8c961088bf5e07fefe6043b from file file1 index 74
+Peer 4 owns chunk d4a1f9dd24ef08206219b4763cd8abd9 from file file1 index 75
+Peer 4 owns chunk 6a62a8b429853e1431635ae4513b01cd from file file1 index 76
+Peer 4 owns chunk 21f265854dfa2ed549e1cd93ce3f2cec from file file1 index 77
+Peer 4 owns chunk f1d5a8622047d16293a5dd04536f36c4 from file file1 index 78
+Peer 4 owns chunk bca3e425b4acf7fff9429ec041f7bbd1 from file file1 index 79
+Peer 4 owns chunk c02e953060b4d4752c79cee3feb1fc25 from file file7 index 0
+Peer 4 owns chunk 733cc01999afa275a8e46320543e89fd from file file7 index 1
+Peer 4 owns chunk 8e4e1d5d14be9aa7c5c9e7d041b338a1 from file file7 index 2
+Peer 4 owns chunk ca49f16c97f3a268d6b40a48c3b47399 from file file7 index 3
+Peer 4 owns chunk 2e64a5511eac430a02a028d49a5b192c from file file7 index 4
+Peer 4 owns chunk 253c6af5f3bada7acc5cd8b53e08597b from file file7 index 5
+Peer 4 owns chunk 289cf3ec4e70f582ba6d971f6f9eb856 from file file7 index 6
+Peer 4 owns chunk 5e2a0aa4eb3e385eae2b3eb688d5ce86 from file file7 index 7
+Peer 4 owns chunk b6ac45d64ed9775ffc33788baaa27744 from file file7 index 8
+Peer 4 owns chunk 971efa72f42c9755485ba3e7a901e7bd from file file7 index 9
+Peer 4 owns chunk 97236499a2caa6aa42a35dcdc5fe87a8 from file file7 index 10
+Peer 4 owns chunk 7353ec4f5638d3f1ffe4a88af830d256 from file file7 index 11
+Peer 4 owns chunk fe72f821fafb004fcd211b2e0ab2bd6a from file file7 index 12
+Peer 4 owns chunk a1dfe4ce9077ac76da631848da49cdd6 from file file7 index 13
+Peer 4 owns chunk dff34d005829d3d9324d35e8fbf91654 from file file7 index 14
+Peer 4 owns chunk e425122761407809dd653f8de8887729 from file file7 index 15
+Peer 4 owns chunk cad806ed3296716d39b3f3d3bf4edeb3 from file file7 index 16
+Peer 4 owns chunk 4beffcec98b4c1e8627c9ab34474eee4 from file file7 index 17
+Peer 4 owns chunk 1642383eec2aa40be7ef77ada359ef96 from file file7 index 18
+Peer 4 owns chunk c61cff2a8b405de4529ed7df7a582215 from file file7 index 19
+Peer 4 owns chunk ad5d972a524b9b80b584e3a1fc02de2d from file file7 index 20
+Peer 4 owns chunk 992716ad2ab97f902a90ec8ee983b516 from file file7 index 21
+Peer 4 owns chunk 01c86f8642e662b1f4eb05e17aa41def from file file7 index 22
+Peer 4 owns chunk 32e51cf8453356c968718f1db8d15800 from file file7 index 23
+Peer 4 owns chunk 70e3f167d65314c4860db210ebcc3ba9 from file file7 index 24
+Peer 4 owns chunk ede04f2bfde5dce9f45a3be449edca17 from file file7 index 25
+Peer 4 owns chunk bdfda54ba49de38eee2b15d516e1ef38 from file file7 index 26
+Peer 4 owns chunk 05963d55378a77395fd0b31c986fd0d6 from file file7 index 27
+Peer 4 owns chunk 8775144f07856e9e2e4d53ed77ca92c0 from file file7 index 28
+Peer 4 owns chunk 5ef46b9408313c6b5817b92afae12d56 from file file7 index 29
+Peer 4 owns chunk 081c2f7220cf2fa8927767db4ea41b75 from file file7 index 30
+PeerFILES OK from peer 3
+FILES OK from peer 1
+FILES OK from peer 4
+FILES OK from peer 2
+ 4 owns chunk c0991ad0069c888f103fab042641eabf from file file7 index 31
+Peer 4 owns chunk b95650ee2e690ea842f2bb527506657e from file file7 index 32
+Peer 4 owns chunk bcde38c62da647fbf2422f80454488d5 from file file7 index 33
+Peer 4 owns chunk f3de62c35374840ba2dfe3cc63cf3dac from file file7 index 34
+Peer 4 owns chunk 33f7bb2ef036c3f07aa561876cbcbe6f from file file7 index 35
+Peer 4 owns chunk 4ddf01f5d15cd59d941a0c96b8eacfd5 from file file7 index 36
+Peer 4 owns chunk fb00e1ca47520f9c93bd4bfb6be65450 from file file7 index 37
+Peer 4 owns chunk 5119accecfcd605d781a258cd3d5e7b5 from file file7 index 38
+Peer 4 owns chunk b2dc978fb07ef4fb6d265326863bf36e from file file7 index 39
+Peer 4 owns chunk ceaacbd68795ded42e0b411e6e69b583 from file file7 index 40
+Peer 4 owns chunk 03b825cf47ebb0ea4f7d0cd7f0ece4d9 from file file7 index 41
+Peer 4 owns chunk 9246e038921a2543ff024da1d88702d3 from file file7 index 42
+Peer 4 owns chunk c749bf2d3780543a9f34c82cedcf1638 from file file7 index 43
+Peer 4 owns chunk 21af0e753a25d664df62d8ac44498e3c from file file7 index 44
+Peer 4 owns chunk f3a51c1299bb1572e7846da005bae2cf from file file7 index 45
+Peer 4 owns chunk a68360b3bdaf952d19955565122803ee from file file7 index 46
+Peer 4 owns chunk 5a6a92b51a834b4805c7414b0f5df245 from file file7 index 47
+Peer 4 owns chunk dff592b6707bb3f90db5d59d61b60eaa from file file7 index 48
+Peer 4 owns chunk 3cc75cceddc039a23f95186aa289dd67 from file file7 index 49
+Peer 4 owns chunk 2b1caa65c5e6f6c8b5934b3f30c7680b from file file7 index 50
+Peer 4 owns chunk b375e67e8db4b73cd942f70f5182b618 from file file7 index 51
+Peer 4 owns chunk b9846609b3023a10ef6a41300d0a8850 from file file7 index 52
+Peer 4 owns chunk bb34390d4ef4f0e3b037ae06d8fa98c6 from file file7 index 53
+Peer 4 owns chunk 4e1435124359a671d7c4a173cd75016c from file file7 index 54
+Peer 4 owns chunk b64c20f49bd08c12123cc0be0154773a from file file7 index 55
+Peer 4 owns chunk c836e30fde287c869e18166f5d494370 from file file7 index 56
+Peer 4 owns chunk a38d41d95a8c6f6afc6b9f8165daf365 from file file7 index 57
+Peer 4 owns chunk f662110df5334d0065a29b3870066c2b from file file7 index 58
+Peer 4 owns chunk 23c978b211f7b8ed6a9c65c970173b6a from file file7 index 59
+Peer 4 owns chunk 2a74ea2ddf00fde27c8b107acfae42a9 from file file7 index 60
+Peer 4 owns chunk 890da854c06e48e726f7d243159fafc1 from file file7 index 61
+Peer 4 owns chunk 06c065ac8f9a37b916884a9d167ea6a2 from file file7 index 62
+Peer 4 owns chunk ed41ab6395c490a97618c5530feb2a88 from file file7 index 63
+Peer 4 owns chunk 6014128d5073e8b452c173c6e8b17a5d from file file7 index 64
+Peer 4 owns chunk a654db13a2360d2c478cead4d9a02e08 from file file7 index 65
+Peer 4 owns chunk 922ea0d563acabedd6485b5318443553 from file file7 index 66
+Peer 4 owns chunk f7756ff1a2e523ebb25996e587bb9e19 from file file7 index 67
+Peer 4 owns chunk 5455c2d9293a5d05e932a352a4cbbaba from file file7 index 68
+Peer 4 owns chunk 0b108666ccf44d1b20a67b91744d2d3d from file file7 index 69
+Peer 5 owns chunk 38372a0100d22bbd263e4c9fdb6585a0 from file file2 index 0
+Peer 5 owns chunk 52ac474e043f8180cd643c9392a87ef4 from file file2 index 1
+Peer 5 owns chunk f9ec084336020d133934fb8c35ac7348 from file file2 index 2
+Peer 5 owns chunk 2798183b8cf16b3dddbb8598e5a522c9 from file file2 index 3
+Peer 5 owns chunk 62a54fa5fd5c27f495006989fa34ba1d from file file2 index 4
+Peer 5 owns chunk e87414568402b8fe650a1f1dd11cc974 from file file2 index 5
+Peer 5 owns chunk a7d2f6d2e1098392d3d2f0b020b5b16c from file file2 index 6
+Peer 5 owns chunk cc5f0faeb3cbde30d0301c863ab3e157 from file file2 index 7
+Peer 5 owns chunk d790c5d4677816fdc17f7defc9d244dc from file file2 index 8
+Peer 5 owns chunk 0e657a74ea55ed9492cb763b0d8afc24 from file file2 index 9
+Peer 5 owns chunk 33f52cabf6c6d638b29506f227f34704 from file file2 index 10
+Peer 5 owns chunk 2e2695f1252071db3c339eeab19be8fd from file file2 index 11
+Peer 5 owns chunk e2b5ace1b935d57423dd71c350c7b7dc from file file2 index 12
+Peer 5 owns chunk 09e82966f0f595ffb5cfd120c5382526 from file file2 index 13
+Peer 5 owns chunk 460b9c414142972dad70717233f101b6 from file file2 index 14
+Peer Hello from upload thread 3
+Hello from upload thread 2
+5 owns chunk 8fb8ea01358a85295d9d3ac911b6b9f6 from file file2 index 15
+Peer 5 owns chunk 5151ed183d9266919be0e3c7abff70fe from file file2 index 16
+Peer 5 owns chunk d5956bf2f9cc67a0b38b3056e1789435 from file file2 index 17
+Peer 5 owns chunk 41dccb298391b27730afbc2d3d73d2d7 from file file2 index 18
+Peer 5 owns chunk 8c2bb75a8a0e5a6d53e0588a0710af68 from file file2 index 19
+Peer 5 owns chunk 210581de46b6caca49c8f54bc7ca541e from file file2 index 20
+Peer 5 owns chunk 1ba169c2f831d2d60504abca04b3b623 from file file2 index 21
+Peer 5 owns chunk f3f9f8064d4acfbfecce71d61ac0e426 from file file2 index 22
+Peer 5 owns chunk d60924e792da1e2d2b472eae28a5b0cd from file file2 index 23
+Peer 5 owns chunk c39ba8762fdcf8dd9b53c792b5546e18 from file file2 index 24
+Peer 5 owns chunk 0795ac23f89b45d46497796ff2c55aee from file file2 index 25
+Peer 5 owns chunk a043dd259687044f5bda95ff44b05f98 from file file2 index 26
+Peer 5 owns chunk c8ba396d5e55eed32489379adbcd5a18 from file file2 index 27
+Peer 5 owns chunk 274f4108d7027e151a502a5ba7528df5 from file file2 index 28
+Peer 5 owns chunk 51c2b8fe4156fa8cb808aef2ed07b949 from file file2 index 29
+Peer 5 owns chunk 227f324365b692961c7d8b1acf9f8bae from file file2 index 30
+Peer 5 owns chunk 6353d449f78750a4d35ee1c8e1ec0a53 from file file2 index 31
+Peer 5 owns chunk 90244aa242e7804ce82bab7fd5c254ea from file file2 index 32
+Peer 5 owns chunk 1b4aec81e0608344953caea580553304 from file file2 index 33
+Peer 5 owns chunk 07d67d3b1757abf2b259613bc46ac9f8 from file file2 index 34
+Peer 5 owns chunk 32802a823dfb025933e4d23b2e90ca73 from file file2 index 35
+Peer 5 owns chunk c1ebb8dd25ea1f4a0a502f78b95b398b from file file2 index 36
+Peer 5 owns chunk 51f22fd8226ef9548631c7b574d3cbf2 from file file2 index 37
+Peer 5 owns chunk 6648d5e71afe15e3d2c79c15ca4b7219 from file file2 index 38
+Peer 5 owns chunk a0356166ac55e2cf8e7e1069b55398a1 from file file2 index 39
+Peer 5 owns chunk a6c65cc5914662347e12263506f08c4a from file file2 index 40
+Peer 5 owns chunk 30d05280cdf904e861b98b373edb2d32 from file file2 index 41
+Peer 5 owns chunk d47cbb971012c39edb90f4399fe15d48 from file file2 index 42
+Peer 5 owns chunk 521707a75df9699a0e7aeeb2370c9ca3 from file file2 index 43
+Peer 5 owns chunk f37d33003760ddafa8d328b13a98166a from file file2 index 44
+Peer 5 owns chunk 4c5d1d69dca1acb56f88fcb13e9e5dba from file file2 index 45
+Peer 5 owns chunk 48c83ee4ea50374400ad052aa342a4dd from file file2 index 46
+Peer 5 owns chunk 6f4dc687465d15997532941f032aa556 from file file2 index 47
+Peer 5 owns chunk b2557ce5dc8050e12ffb0c9a84555ac7 from file file2 index 48
+Peer 5 owns chunk 06e1ecd924a1793252b07a15b4447db7 from file file2 index 49
+Peer 5 owns chunk 5ac5470a209691f7865e47b7dff34a1b from file file2 index 50
+Peer 5 owns chunk 860f9b5e2d450209a5510e38913da429 from file file2 index 51
+Peer 5 owns chunk 63673845f24549d3dc1d6081ec2ad415 from file file2 index 52
+Peer 5 owns chunk 2dfa1aea7baa56cde1a6d030c85fec9e from file file2 index 53
+Peer 5 owns chunk 396e9f2f877f0c722a10aa45eeac33a9 from file file2 index 54
+Peer 5 owns chunk 6c7adf64afe00bf7baad842ae795472b from file file2 index 55
+Peer 5 owns chunk ad29507add8ba062998c15229b38d1f7 from file file2 index 56
+Peer 5 owns chunk 6e376995b8456317b9f33e703a177eac from file file2 index 57
+Peer 5 owns chunk 0327638f982945e81535f7811391f78f from file file2 index 58
+Peer 5 owns chunk 3951b3defbd86ea507a001b6533ecccc from file file2 index 59
+Peer 5 owns chunk c412622829885df5531d4f078c8a39a5 from file file3 index 0
+Peer 5 owns chunk cab1aade7c729cf5cd68bfd5cc95790b from file file3 index 1
+Peer 5 owns chunk 0f9bc16d9d39884aacb3b3012be85831 from file file3 index 2
+Peer 5 owns chunk e6fb7066ffe348888298ec0cbeed79e5 from file file3 index 3
+Peer 5 owns chunk eb4be6b1df264a07d5c157f79fade253 from file file3 index 4
+Peer 5 owns chunk 1ce6806a7dc85025bc36a75bd266e9f5 from file file3 index 5
+Peer 5 owns chunk 262c8d6a5d7cdde102831d3fa06ce600 from file file3 index 6
+Peer 5 owns chunk 766f8b91241de149f2c1db2e6a3bf680 from file file3 index 7
+Peer 5 owns chunk 027b0bb82bd71f19e493563b6b82debe from file file3 index 8
+Peer 5 owns chunk bd4fd713a96012ed52c7cfe59272240a from file file3 index 9
+Peer 5 owns chunk fdb67cc9270ea86faf84ed77644f002d from file file3 index 10
+Peer 5 owns chunk 8f59252238a3e0ed412c6f9f36c4ec00 from file file3 index 11
+Peer 5 owns chunk afb1e0e4e7326dde25c136d5a3b58aa6 from file file3 index 12
+Peer 5 owns chunk 25130f76c36b52564dbc47ccefe8c45f from file file3 index 13
+Peer 5 owns chunk 23ec2c87ce6070df3b1e1e83628430c5 from file file3 index 14
+Peer 5 owns chunk c21a62a706f55dd8843c09f9e7f501c0 from file file3 index 15
+Peer 5 owns chunk 55363372730356d5024d922d5f4bd075 from file file3 index 16
+Peer 5 owns chunk e9a78f54c2f562130df87d9d77da7df0 from file file3 index 17
+Peer 5 owns chunk 493ef49af878b63f30fc13b96e29d9f8 from file file3 index 18
+Peer 5 owns chunk d0c9a6c639757f35731ff435ffea9ff3 from file file3 index 19
+Peer 5 owns chunk de7a2e62f4c87f4032e7600504f8c9f7 from file file3 index 20
+Peer 5 owns chunk 05f6150d257460a608d25adc72e535f3 from file file3 index 21
+Peer 5 owns chunk ef504306be432c6ff870af2f805f878d from file file3 index 22
+Peer 5 owns chunk 8bdf22ba87c0d5745ca28b3679ddc400 from file file3 index 23
+Peer 5 owns chunk 5b6234e0bb73d556164e638456d54e21 from file file3 index 24
+Peer 5 owns chunk 019bfbf1f340ee8902bba5fcd592e733 from file file3 index 25
+Peer 5 owns chunk 97590388c370741f22f62e158b178cab from file file3 index 26
+Peer 5 owns chunk cf039fd3b38366b3261254b09af9b8e6 from file file3 index 27
+Peer 5 owns chunk 07c0ea859d3c783012ce2f6ba77ba3a1 from file file3 index 28
+Peer 5 owns chunk ca3555649a2a5b8ac8396821fd0de8dd from file file3 index 29
+Peer 5 owns chunk 0608ec3eba7f72341077faf91e22901c from file file3 index 30
+Peer 5 owns chunk f6c88b2a4b85d404f4da2d5c469aaed0 from file file3 index 31
+Peer 5 owns chunk 8a53e6e0c76e2e1f8fc89254241810cb from file file3 index 32
+Peer 5 owns chunk 270c05227911d2f196e34c96731aa964 from file file3 index 33
+Peer 5 owns chunk 049b3dd5a68b61ba7e204e17df9f7e20 from file file3 index 34
+Peer 5 owns chunk e666917534bd01c0d5582633146a7d88 from file file3 index 35
+Peer 5 owns chunk c741fd514a762a7466af7e6884e182d1 from file file3 index 36
+Peer 5 owns chunk 288d1862185b40884c6dc8fc106857b0 from file file3 index 37
+Peer 5 owns chunk a01c839d758744f7d9c3e0bb867947c2 from file file3 index 38
+Peer 5 owns chunk 21bb85ca2606f8ada549a8014e672ca7 from file file3 index 39
+Peer 5 owns chunk 7531347e132bb327a676075dfe0913c1 from file file3 index 40
+Peer 5 owns chunk 24363d0c5334d57aae98a71aa86433b3 from file file3 index 41
+Peer 5 owns chunk 192f71c0cf22d1ab29cfd704b744f4b0 from file file3 index 42
+Peer 5 owns chunk 54a7d1383d7dbd7ad00c950f3f20a490 from file file3 index 43
+Peer 5 owns chunk 5b1f59857bd0c51b437bb3abe26bde57 from file file3 index 44
+Peer 5 owns chunk 7da00954cde503f0037c5a3c03ea49bf from file file3 index 45
+Peer 5 owns chunk f6a5351c1062c32c67ec281f93314f0a from file file3 index 46
+Peer 5 owns chunk bf03d1a777a9d1a9c124424bfedbe2fa from file file3 index 47
+Peer 5 owns chunk 437d67de99afb81058dff5c7bc1bcafc from file file3 index 48
+Peer 5 owns chunk bb8ecb62f43814b769a4f0f05b3cef04 from file file3 index 49
+Peer 5 owns chunk 7d43b09c1c8bfe254f0c4a1984ab464a from file file3 index 50
+Peer 5 owns chunk 4ba75fd5772fedcd70ecf41695935b1b from file file3 index 51
+Peer 5 owns chunk 3de78db834008d528b95396030167171 from file file3 index 52
+Peer 5 owns chunk 4783e5a4a5ddb730e6eeb03d8b17fe20 from file file3 index 53
+Peer 5 owns chunk 5a79c5a289713f30c82244c7bf06de1b from file file3 index 54
+Peer 5 owns chunk b9a25f2cfef7068ac5ffdb9bbe76a52e from file file3 index 55
+Peer 5 owns chunk 55dd5c2f1e80da4601d17947e4dd0a9b from file file3 index 56
+Peer 5 owns chunk 74cac2b309eb6f25b3aa0d89c3c18511 from file file3 index 57
+Peer 5 owns chunk 6d370f976b688a23bcfd08587bf8f0c7 from file file3 index 58
+Peer 5 owns chunk de03455a9740772b96385f8b54ac6748 from file file3 index 59
+Peer 5 owns chunk 403e4fa9df61e8c7bf2fd56c1153696c from file file3 index 60
+Peer 5 owns chunk a7ca76280d58a08fcbe2a1a6643654cd from file file3 index 61
+Peer 5 owns chunk f7d1e0b0f36445940e42a94b8b1d3e5b from file file3 index Request received: CHUNK REQ from process 2
+Hello from download thread 2
+Peer 2 requests file file6
+FILE RECEIVED: file6
+Seed 3
+File file6 has 60 chunks and 0 chunks
+62
+Peer 5 owns chunk 5dd185aa5d251ae0574e19df3a6a1a0a from file file3 index 63
+Peer 5 owns chunk a2e18ef620a6a9a48645548703589c95 from file file3 index 64
+Peer 5 owns chunk cf6a2ca16495365be088e713c7328fb9 from file file3 index 65
+Peer 5 owns chunk 4ff455759875d15e4af47fa86d4eb407 from file file3 index 66
+Peer 5 owns chunk 40f1d53812eb5747869242e8300fadfa from file file3 index 67
+Peer 5 owns chunk c3b019ffbdbf0c063486e5ae9c2ff9b3 from file file3 index 68
+Peer 5 owns chunk 921fd56d817dd5aeee1f75fdd69eff8c from file file3 index 69
+Peer 5 owns chunk 84a9d5860dab38b11cda92f0c7598984 from file file3 index 70
+Peer 5 owns chunk c778c7f4716613e412fcfe67b9f791ab from file file3 index 71
+Peer 5 owns chunk 71bfcfd2b342ca92a0d4dcf2c36a00be from file file3 index 72
+Peer 5 owns chunk a4c32ff06055cf2e1aa72997d9e0869d from file file3 index 73
+Peer 5 owns chunk fdd4c885295506ffd95290a7ac7d4500 from file file3 index 74
+File file1 seed 1
+Chunks: 80
+File file2 seed 1
+Chunks: 60
+File file3 seed 2
+Chunks: 75
+File file4 seed 2
+Chunks: 30
+File file5 seed 3
+Chunks: 50
+File file6 seed 3
+Chunks: 60
+File file1 seed 4
+Chunks: 80
+File file7 seed 4
+Chunks: 70
+File file2 seed 5
+Chunks: 60
+File file3 seed 5
+Chunks: 75
+OWNERS REQ from peer 2 for file file6
+CHUNK REQ from peer 2 for file file6 chunk 0
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 1
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 2
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 3
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 4
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 5
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 6
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 7
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 8
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 9
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 10
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 11
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 12
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 13
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 14
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 15
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 16
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 17
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 18
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 19
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 20
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 21
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 22
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 23
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 24
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 25
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 26
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 27
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 28
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 29
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 30
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 31
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 32
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 33
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 34
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 35
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 36
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 37
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 38
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 39
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 40
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 41
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 42
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 43
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 44
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 45
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 46
+Request received: CHUNK REQ from process 2
+Hello from download thread 3
+Peer 3 requests file file4
+FILE RECEIVED: file4
+Seed 2
+File file4 has 30 chunks and 0 chunks
+Request received: CHUNK REQ from process 3
+OWNERS REQ from peer 1 for file file7
+OWNERS REQ from peer 3 for file file4
+Hello from upload thread 1
+Hello from download thread 1
+Peer 1 requests file file7
+FILES OK from peer 5
+CHUNK REQ from peer 3 for file file4 chunk 0
+FILE RECEIVED: file7
+Seed 4
+File file7 has 70 chunks and 0 chunks
+Hello from upload thread 5
+CHUNK REQ from peer 2 for file file6 chunk 47
+Hello from download thread 5
+Peer 5 requests file file1
+OWNERS REQ from peer 5 for file file1
+FILE RECEIVED: file1
+Seed 1
+File file1 has 80 chunks and 0 chunks
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 48
+Request received: CHUNK REQ from process 3
+CHUNK REQ from peer 3 for file file4 chunk 1
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 49
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 0
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 1
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 50
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 2
+Hello from download thread 4
+Peer 4 requests file file2
+Hello from upload thread 4
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 0
+Request received: CHUNK REQ from process 3
+CHUNK REQ from peer 3 for file file4 chunk 2
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 1
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 2
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 51
+File file7 completed
+Ready request from peer 1
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 3
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 4
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 5
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 6
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 7
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 8
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 9
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 10
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 11
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 12
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 13
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 14
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 15
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 16
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 17
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 18
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 19
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 20
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 21
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 22
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 23
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 24
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 25
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 26
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 27
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 28
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 29
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 30
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 31
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 32
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 33
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 34
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 35
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 36
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 37
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 38
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 39
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 40
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 41
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 42
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 43
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 44
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 45
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 46
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 47
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 48
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 49
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 50
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 51
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 52
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 53
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 54
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 55
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 56
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 57
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 58
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 59
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 60
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 61
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 62
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 63
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 64
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 65
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 66
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 67
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 68
+Request received: CHUNK REQ from process 1
+CHUNK REQ from peer 1 for file file7 chunk 69
+Request received: CHUNK REQ from process 3
+CHUNK REQ from peer 3 for file file4 chunk 3
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 3
+Request received: CHUNK REQ from process 3
+CHUNK REQ from peer 3 for file file4 chunk 4
+Request received: CHUNK REQ from process 3
+CHUNK REQ from peer 3 for file file4 chunk 5
+Request received: CHUNK REQ from process 3
+CHUNK REQ from peer 3 for file file4 chunk 6
+Request received: CHUNK REQ from process 3
+CHUNK REQ from peer 3 for file file4 chunk 7
+Request received: CHUNK REQ from process 3
+CHUNK REQ from peer 3 for file file4 chunk 8
+Request received: CHUNK REQ from process 3
+CHUNK REQ from peer 3 for file file4 chunk 9
+Request received: CHUNK REQ from process 3
+CHUNK REQ from peer 3 for file file4 chunk 10
+Request received: CHUNK REQ from process 3
+CHUNK REQ from peer 3 for file file4 chunk 11
+Request received: CHUNK REQ from process 3
+CHUNK REQ from peer 3 for file file4 chunk 12
+Request received: CHUNK REQ from process 3
+CHUNK REQ from peer 3 for file file4 chunk 13
+Request received: CHUNK REQ from process 3
+CHUNK REQ from peer 3 for file file4 chunk 14
+Request received: CHUNK REQ from process 3
+CHUNK REQ from peer 3 for file file4 chunk 15
+Request received: CHUNK REQ from process 3
+CHUNK REQ from peer 3 for file file4 chunk 16
+Request received: CHUNK REQ from process 3
+CHUNK REQ from peer 3 for file file4 chunk 17
+Request received: CHUNK REQ from process 3
+CHUNK REQ from peer 3 for file file4 chunk 18
+Request received: CHUNK REQ from process 3
+CHUNK REQ from peer 3 for file file4 chunk 19
+Request received: CHUNK REQ from process 3
+CHUNK REQ from peer 3 for file file4 chunk 20
+Request received: CHUNK REQ from process 3
+CHUNK REQ from peer 3 for file file4 chunk 21
+Request received: CHUNK REQ from process 3
+CHUNK REQ from peer 3 for file file4 chunk 22
+Request received: CHUNK REQ from process 3
+CHUNK REQ from peer 3 for file file4 chunk 23
+Request received: CHUNK REQ from process 3
+CHUNK REQ from peer 3 for file file4 chunk 24
+Request received: CHUNK REQ from process 3
+CHUNK REQ from peer 3 for file file4 chunk 25
+Request received: CHUNK REQ from process 3
+CHUNK REQ from peer 3 for file file4 chunk 26
+Request received: CHUNK REQ from process 3
+CHUNK REQ from peer 3 for file file4 chunk 27
+Request received: CHUNK REQ from process 3
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 4
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 5
+CHUNK REQ from peer 3 for file file4 chunk 28
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 6
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 7
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 8
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 9
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 10
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 11
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 12
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 13
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 14
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 15
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 16
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 17
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 18
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 19
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 20
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 21
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 22
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 23
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 24
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 25
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 26
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 27
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 28
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 29
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 30
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 31
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 32
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 33
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 34
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 35
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 36
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 37
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 38
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 39
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 40
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 41
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 42
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 43
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 44
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 45
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 46
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 47
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 48
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 49
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 50
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 51
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 52
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 53
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 54
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 55
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 56
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 57
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 58
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 59
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 60
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 61
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 62
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 63
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 64
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 65
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 66
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 67
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 68
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 69
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 70
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 71
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 72
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 73
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 74
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 75
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 76
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 77
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 78
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file1 chunk 79
+File file1 completed
+Request received: CHUNK REQ from process 2
+Request received: CHUNK REQ from process 3
+CHUNK REQ from peer 3 for file file4 chunk 29
+File file4 completed
+CHUNK REQ from peer 2 for file file6 chunk 52
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 53
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 54
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 55
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 56
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 57
+Request received: CHUNK REQ from process 2
+CHUNK REQ from peer 2 for file file6 chunk 58
+Request received: CHUNK REQ from process 2
+File file6 completed
+CHUNK REQ from peer 2 for file file6 chunk 59
+Ready request from peer 3
+Ready request from peer 2
+Peer 5 requests file file4
+FILE RECEIVED: file1
+Seed 4
+File file1 has 80 chunks and 0 chunks
+OWNERS REQ from peer 4 for file file2
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 0
+FILE RECEIVED: file2
+Seed 1
+File file2 has 60 chunks and 0 chunks
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 1
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 2
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 3
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 4
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 5
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 6
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 7
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 8
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 9
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 10
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 11
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 12
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 13
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 14
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 15
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 16
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 17
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 18
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 19
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 20
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 21
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 22
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 23
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 24
+Request received: CHUNK REQ from process 5
+CHUNK REQ from peer 5 for file file4 chunk 0
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 25
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 26
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 27
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 28
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 29
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 30
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 31
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 32
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 33
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 34
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 35
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 36
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 37
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 38
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 39
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 40
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 41
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 42
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 43
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 44
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 45
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 46
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 47
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 48
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 49
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 50
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 51
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 52
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 53
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 54
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 55
+File file2 completed
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 56
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 57
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 58
+Request received: CHUNK REQ from process 4
+CHUNK REQ from peer 4 for file file2 chunk 59
+Ready request from peer 4
