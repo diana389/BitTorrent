@@ -32,10 +32,8 @@ typedef struct {
 } file_info;
 
 
-file_info files[MAX_FILES];
-int files_count = 0;
-
-MPI_Comm new_comm;
+file_info files[MAX_FILES]; // files database on tracker
+int files_count = 0; // number of files in database
 
 typedef struct {
     char filename[MAX_FILENAME];
@@ -44,30 +42,31 @@ typedef struct {
     chunk_info chunks[MAX_CHUNKS];
 } file_requested;
 
-file_requested files_requested[MAX_FILES];
-int files_requested_count = 0;
-int files_requested_completed = 0;
+file_requested files_requested[MAX_FILES]; // files requested by peer
+int files_requested_count = 0; // number of files requested by peer
+int files_requested_completed = 0; // number of files requested by peer and completed
 
-file_info files_owned[MAX_FILES];
-int files_owned_count = 0;
+file_info files_owned[MAX_FILES]; // files owned by peer
+int files_owned_count = 0; // number of files owned by peer
 
 int numtasks;
 
+// function to create client file
 void create_client_file(int rank, char *filename, char *hash, int chunk_index) {
+        // compute client file name
         char clientfilename[MAX_FILENAME] = "client0_";
         clientfilename[6] = rank + '0';
         strcat(clientfilename, filename);
 
-        // hash[HASH_SIZE + 1] = '\n';
-        // hash[HASH_SIZE + 2] = '\0';
-
         if(chunk_index == 0) {
+            // create new file
             FILE *output = fopen(clientfilename, "w");
             fwrite(hash, sizeof(char), HASH_SIZE, output);
             fwrite("\n", sizeof(char), 1, output);
             fclose(output);
         }
         else {
+            // append to existing file
             FILE *output = fopen(clientfilename, "a");
             fwrite(hash, sizeof(char), HASH_SIZE, output);
             fwrite("\n", sizeof(char), 1, output);
@@ -75,66 +74,74 @@ void create_client_file(int rank, char *filename, char *hash, int chunk_index) {
         }
 }
 
-file_info request_file_info_from_tracker(int rank, char *filename) {
+// function to request chunks information from tracker
+void request_file_info_from_tracker(int rank, char *filename, chunk_info *chunks, int *chunks_count) {
         printf("Peer %d requests file %s\n", rank, filename);
 
-        int owners_count = 0;
-        int owners[100];
-
+        // send request type to tracker
         char owners_request[15] = "OWNERS REQ";
         MPI_Send(owners_request, 15, MPI_CHAR, TRACKER_RANK, TRACKER_REQUEST_TAG, MPI_COMM_WORLD);
-
+        // send filename to tracker
         MPI_Send(filename, MAX_FILENAME, MPI_CHAR, TRACKER_RANK, TRACKER_REQUEST_TAG, MPI_COMM_WORLD);
 
-        file_info current_file;
-        MPI_Recv(&current_file, sizeof(file_info), MPI_BYTE, TRACKER_RANK, TRACKER_RESPONSE_TAG, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-
-        printf("FILE RECEIVED: %s\n", current_file.filename);
-
-        for(int j = 0; j < current_file.seed_count; j++) {
-            printf("Seed %d\n", current_file.seed[j]);
+        // receive chunks count from tracker
+        MPI_Recv(chunks_count, 1, MPI_INT, TRACKER_RANK, TRACKER_RESPONSE_TAG, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+        
+        for(int i = 0; i < *chunks_count; i++) {
+            // receive chunk owners number from tracker
+            MPI_Recv(&chunks[i].owners_count, 1, MPI_INT, TRACKER_RANK, TRACKER_RESPONSE_TAG, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+            // receive chunk index from tracker
+            MPI_Recv(&chunks[i].index, 1, MPI_INT, TRACKER_RANK, TRACKER_RESPONSE_TAG, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+            // receive chunk owners from tracker
+            MPI_Recv(chunks[i].owners, chunks[i].owners_count, MPI_INT, TRACKER_RANK, TRACKER_RESPONSE_TAG, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
         }
-
-        return current_file;
 }
 
-void request_chunk_from_peer(int rank, char *filename, int file_index, file_info current_file, char *hash, int chunk_index) {
-        int chosen_owner = current_file.chunks[chunk_index].owners[0];
+// function to request chunk from peer
+void request_chunk_from_peer(int rank, char *filename, int file_index, chunk_info *chunks, char *hash, int chunk_index) {
+        int chosen_owner = chunks[chunk_index].owners[0]; // choose owner of chunk
 
-        // printf("Chunk %d: owner %d\n", current_file.chunks[chunk_index].index, chosen_owner);
+        printf("Chunk %d: owner %d\n", chunks[chunk_index].index, chosen_owner);
 
+        // send chunk request to chosen owner
         char chunk_request[15] = "CHUNK REQ";
         MPI_Send(chunk_request, 15, MPI_CHAR, chosen_owner, UPLOAD_TAG, MPI_COMM_WORLD);
+        // send filename to chosen owner
         MPI_Send(files_requested[file_index].filename, MAX_FILENAME, MPI_CHAR, chosen_owner, UPLOAD_TAG, MPI_COMM_WORLD);
-        MPI_Send(&current_file.chunks[chunk_index].index, 1, MPI_INT, chosen_owner, UPLOAD_TAG, MPI_COMM_WORLD);
+        // send chunk index to chosen owner
+        MPI_Send(&chunks[chunk_index].index, 1, MPI_INT, chosen_owner, UPLOAD_TAG, MPI_COMM_WORLD);
 
+        // receive chunk hash from chosen owner
         MPI_Recv(hash, HASH_SIZE + 1, MPI_CHAR, chosen_owner, CHUNK_TAG, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-        // printf("Chunk %d: %s\n", current_file.chunks[chunk_index].index, hash);
 
-        // chunk_index = current_file.chunks[chunk_index].index;
+        // add chunk to file structure
         files_requested[file_index].chunks_recv[chunk_index] = chosen_owner;
         files_requested[file_index].chunks_count_recv++;
         strcpy(files_requested[file_index].chunks[chunk_index].hash, hash);
         files_requested[file_index].chunks[chunk_index].index = chunk_index;
 }
 
+// function to try and complete file
 void manage_file_requested(int rank, char *filename, int file_index) {
-        file_info current_file = request_file_info_from_tracker(rank, filename);
+        chunk_info chunks[MAX_CHUNKS];
+        int chunks_count = 0;
 
-        char hash[HASH_SIZE + 1];
+        // get chunks and chunks count from tracker
+        request_file_info_from_tracker(rank, filename, chunks, &chunks_count);
+        
+        printf("File %s should have %d chunks and has %d chunks\n", filename, chunks_count, files_requested[file_index].chunks_count_recv);
 
-        printf("File %s has %d chunks and %d chunks\n", current_file.filename, current_file.chunks_count, files_requested[file_index].chunks_count_recv);
-
-        for(int i = 0; i < current_file.chunks_count; i++) {
-            request_chunk_from_peer(rank, filename, file_index, current_file, hash, i);
+        // request chunks from peers
+        for(int i = 0; i < chunks_count; i++) {
+            char hash[HASH_SIZE + 1];
+            request_chunk_from_peer(rank, filename, file_index, chunks, hash, i);
         }
-        // request_chunk_from_peer(rank, filename, file_index, current_file, hash, 0);
 
-            // printf("!!!!!!Hash: %s\n", hash);
-
-        if(files_requested[file_index].chunks_count_recv == current_file.chunks_count) {
+        // check if file is completed
+        if(files_requested[file_index].chunks_count_recv == chunks_count) {
             printf("File %s completed\n", filename);
 
+            // create client file
             for (int i = 0; i < files_requested[file_index].chunks_count_recv; i++) {
                 create_client_file(rank, filename, files_requested[file_index].chunks[i].hash, i);
             }
@@ -143,98 +150,98 @@ void manage_file_requested(int rank, char *filename, int file_index) {
         }
 }
 
+// function to be executed by download thread
 void *download_thread_func(void *arg)
 {
     int rank = *(int*) arg;
-    printf("Hello from download thread %d\n", rank);
-
-    // if(rank != 3)
-    //     return NULL;
     
+    // make requests to tracker until all files are completed
     while(files_requested_completed < files_requested_count) {
-            for(int i = 0; i < files_requested_count; i++) {
-                manage_file_requested(rank, files_requested[i].filename, i);
-            }
+        for(int i = 0; i < files_requested_count; i++) {
+            manage_file_requested(rank, files_requested[i].filename, i);
+        }
     }
 
-    printf("Ready request from peer %d\n", rank);
+    // send ready request to tracker when all files are completed
     char ready[15] = "READY";
+    printf("Ready request from peer %d\n", rank);
     MPI_Send(ready, 15, MPI_CHAR, TRACKER_RANK, TRACKER_REQUEST_TAG, MPI_COMM_WORLD);
 
     return NULL;
 }
 
+// function to be executed by upload thread
 void *upload_thread_func(void *arg)
 {
     int rank = *(int*) arg;
-    printf("Hello from upload thread %d\n", rank);
 
     while (1) {    
         MPI_Status status;
         char request[15] = "";
 
+        // receive request type from peer or tracker
         MPI_Recv(request, 15, MPI_CHAR, MPI_ANY_SOURCE, UPLOAD_TAG, MPI_COMM_WORLD, &status);
 
-        printf("Request received: %s from process %d\n", request, status.MPI_SOURCE);
-
+        // if request is CHUNK REQ, send chunk hash to peer
         if (strcmp(request, "CHUNK REQ") == 0) {
             char filename[MAX_FILENAME];
             int chunk_index = -1;
 
+            // receive filename
             MPI_Recv(filename, MAX_FILENAME, MPI_CHAR, status.MPI_SOURCE, UPLOAD_TAG, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+            // receive chunk index
             MPI_Recv(&chunk_index, 1, MPI_INT, status.MPI_SOURCE, UPLOAD_TAG, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 
             printf("CHUNK REQ from peer %d for file %s chunk %d\n", status.MPI_SOURCE, filename, chunk_index);
 
             for(int i = 0; i < files_owned_count; i++) {
                 if (strcmp(files_owned[i].filename, filename) == 0) {
-                    // printf("chunk %d: %s\n", chunk_index, files_owned[i].chunks[chunk_index].hash);
-
+                    // send chunk hash to peer
                     MPI_Send(files_owned[i].chunks[chunk_index].hash, HASH_SIZE + 1, MPI_CHAR, status.MPI_SOURCE, CHUNK_TAG, MPI_COMM_WORLD);
                 }
             }
         }
 
+        // if request is DONE, exit thread
         if (strcmp(request, "DONE") == 0) {
             printf("DONE from peer %d\n", rank);
             return NULL;
         }
     }
-    
-
-    return NULL;
 }
 
+// function to receive files information from peers and add them to tracker database
 void add_files_to_tracker_database(int numtasks, int rank) {
     int files_owned, chunks;
     char filename[MAX_FILENAME];
     char hash[HASH_SIZE];
 
     for(int i = 1; i < numtasks; i++) {
+        // receive number of files owned by peer
         MPI_Recv(&files_owned, 1, MPI_INT, i, FILE_INFO_TAG, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-        // printf("Peer %d owns %d files\n", i, files_owned);
 
         for(int j = 0; j < files_owned; j++) {
+            // receive filename
             MPI_Recv(filename, MAX_FILENAME, MPI_CHAR, i, FILE_INFO_TAG, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-            // printf("Peer %d owns file %s\n", i, filename);
-
+            // receive number of chunks
             MPI_Recv(&chunks, 1, MPI_INT, i, FILE_INFO_TAG, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 
+            // complete file structure
             files[files_count].seed_count = 0;
             files[files_count].seed[files[files_count].seed_count++] = i;
             strcpy(files[files_count].filename, filename);
             files[files_count].chunks_count = 0;
 
             for(int k = 0; k < chunks; k++) {
+                // receive chunk hash
                 MPI_Recv(hash, HASH_SIZE, MPI_CHAR, i, FILE_INFO_TAG, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-                printf("Peer %d owns chunk %s from file %s index %d\n", i, hash, filename, k);
 
+                // add chunk to file structure
                 chunk_info current_chunk;
                 strcpy(current_chunk.hash, hash);
                 current_chunk.owners_count = 0;
                 current_chunk.owners[current_chunk.owners_count++] = i;
                 current_chunk.index = k;
-
                 files[files_count].chunks[files[files_count].chunks_count++] = current_chunk;
             }
 
@@ -242,24 +249,14 @@ void add_files_to_tracker_database(int numtasks, int rank) {
         }
     }
 
-    for(int i = 0; i < files_count; i++) {
-        for(int j = 0; j < files[i].seed_count; j++) {
-            printf("File %s seed %d\n", files[i].filename, files[i].seed[j]);
-        }
-
-        printf("Chunks: %d\n", files[i].chunks_count);
-
-        // for(int j = 0; j < files[i].chunks_count; j++) {
-        //     printf("Chunk %d: %s\n", j, files[i].chunks[j].hash);
-        // }
-    }
-
+    // send confirmation to peers
     for(int i = 1; i < numtasks; i++) {
         char response[10] = "FILES OK";
         MPI_Send(response, 10, MPI_CHAR, i, FILE_INFO_TAG, MPI_COMM_WORLD);
     }
 }
 
+// function to send DONE message to all peers
 void send_done_message(int numtasks) {
     char response[10] = "DONE";
     for(int i = 1; i < numtasks; i++) {
@@ -270,11 +267,10 @@ void send_done_message(int numtasks) {
 }
 
 void tracker(int numtasks, int rank) {
-    // printf("Hello from tracker %d\n", rank);
-
+    // receive files information from peers and add them to tracker database
     add_files_to_tracker_database(numtasks, rank);
 
-
+    // wait for all peers to be ready
     int clients_ready[numtasks];
     for(int i = 0; i < numtasks; i++) {
         clients_ready[i] = 0;
@@ -284,25 +280,43 @@ void tracker(int numtasks, int rank) {
         char request[15];
         MPI_Status status;
 
+        // receive request type from peer
         MPI_Recv(request, 15, MPI_CHAR, MPI_ANY_SOURCE, TRACKER_REQUEST_TAG, MPI_COMM_WORLD, &status);
 
+        // if request is OWNERS REQ, send files information to peer
         if (strcmp(request, "OWNERS REQ") == 0) {
+            // receive filename
             char filename_req[MAX_FILENAME];
             MPI_Recv(filename_req, MAX_FILENAME, MPI_CHAR, status.MPI_SOURCE, TRACKER_REQUEST_TAG, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+            
             printf("OWNERS REQ from peer %d for file %s\n", status.MPI_SOURCE, filename_req);
 
             for(int i = 0; i < files_count; i++) {
                 if (strcmp(files[i].filename, filename_req) == 0) {
-                    MPI_Send(&files[i], sizeof(file_info), MPI_BYTE, status.MPI_SOURCE, TRACKER_RESPONSE_TAG, MPI_COMM_WORLD);
+                    // send number of chunks to peer
+                    MPI_Send(&files[i].chunks_count, 1, MPI_INT, status.MPI_SOURCE, TRACKER_RESPONSE_TAG, MPI_COMM_WORLD);
+                    
+                    // send chunks information to peer
+                    for(int j = 0; j < files[i].chunks_count; j++) {
+                        // send number of owners to peer
+                        MPI_Send(&files[i].chunks[j].owners_count, 1, MPI_INT, status.MPI_SOURCE, TRACKER_RESPONSE_TAG, MPI_COMM_WORLD);
+                        // send chunk index to peer
+                        MPI_Send(&files[i].chunks[j].index, 1, MPI_INT, status.MPI_SOURCE, TRACKER_RESPONSE_TAG, MPI_COMM_WORLD);
+                        // send owners to peer
+                        MPI_Send(files[i].chunks[j].owners, files[i].chunks[j].owners_count, MPI_INT, status.MPI_SOURCE, TRACKER_RESPONSE_TAG, MPI_COMM_WORLD);
+                    }
+
                     break;
                 }
             }
         }
 
+        // if request is READY, mark peer as ready
         if(strcmp(request, "READY") == 0) {
             clients_ready[status.MPI_SOURCE] = 1;
             printf("Peer %d is ready\n", status.MPI_SOURCE);
 
+            // check if all peers are ready
             int all_ready = 1;
             for(int i = 1; i < numtasks; i++) {
                 if(clients_ready[i] == 0) {
@@ -311,6 +325,7 @@ void tracker(int numtasks, int rank) {
                 }
             }
 
+            // if all peers are ready, send DONE message to all peers
             if(all_ready == 1) {            
                 send_done_message(numtasks);
                 return;
@@ -323,14 +338,12 @@ void tracker(int numtasks, int rank) {
 void peer(int numtasks, int rank) {
     numtasks = numtasks;
 
+    // compute input file name
     char infilename[MAX_FILENAME] = "in";
     char rank_str[5];
     snprintf(rank_str, sizeof(int), "%d", rank);
-
     strcat(infilename, rank_str);
     strcat(infilename, ".txt");
-
-    printf("%s\n", infilename);
 
     FILE *input = fopen(infilename, "r");
 
@@ -342,37 +355,44 @@ void peer(int numtasks, int rank) {
     int chunks;
     char filename[MAX_FILENAME], hash[HASH_SIZE];
 
+    // read files owned number from input file
     fscanf(input, "%d", &files_owned_count);
 
+    // send files owned number to tracker
     MPI_Send(&files_owned_count, 1, MPI_INT, TRACKER_RANK, FILE_INFO_TAG, MPI_COMM_WORLD);
 
     for(int i = 0; i < files_owned_count; i++) {
+        // read file name from input file
         fscanf(input, "%s", filename);
         strcpy(files_owned[i].filename, filename);
-        // printf("Peer %d owns file %s\n", rank, filename);
 
+        // send file name to tracker
         MPI_Send(filename, MAX_FILENAME, MPI_CHAR, TRACKER_RANK, FILE_INFO_TAG, MPI_COMM_WORLD);
 
+        // read chunks number from input file
         fscanf(input, "%d", &chunks);
         files_owned[i].chunks_count = chunks;
+
+        // send chunks number to tracker
         MPI_Send(&chunks, 1, MPI_INT, TRACKER_RANK, FILE_INFO_TAG, MPI_COMM_WORLD);
 
         for(int j = 0; j < chunks; j++) {
+            // read chunk hash from input file
             fscanf(input, "%s", hash);
             hash[HASH_SIZE] = '\0';
             strcpy(files_owned[i].chunks[j].hash, hash);
 
+            // send chunk hash to tracker
             MPI_Send(hash, HASH_SIZE, MPI_CHAR, TRACKER_RANK, FILE_INFO_TAG, MPI_COMM_WORLD);
-            // printf("Peer %d owns chunk %s\n", rank, hash);
         }
     }
 
+    // read files requested number from input file
     fscanf(input, "%d", &files_requested_count);
 
     for(int i = 0; i < files_requested_count; i++) {
+        // read file name from input file
         fscanf(input, "%s", filename);
-        printf("Peer %d requests file %s\n", rank, filename);
-
         strcpy(files_requested[i].filename, filename);
 
         for(int j = 0; j < MAX_CHUNKS; j++) {
@@ -380,6 +400,9 @@ void peer(int numtasks, int rank) {
         }
     }
 
+    fclose(input);
+
+    // receive confirmation from tracker
     char response[10];
     MPI_Recv(response, 10, MPI_CHAR, TRACKER_RANK, FILE_INFO_TAG, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 
