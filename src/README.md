@@ -7,14 +7,16 @@ Programul consta in implementarea unui tracker si a unor clienti cu 3 posibile r
 - Detine un vector de informatii pentru fisiere, cu rol de baza de date.
 - Structura fiecarui fisier (`file_info`), contine numele fisierului si un vector de segmente.
 - Structura unui segment contine hash-ul, indexul segamentului in fisier si clientii care il detin.
-
-### add_files_to_tracker_database
-- Initial, trackerul primeste informatii despre fisiere de la clienti si le completeaza in baza de date, trimitand apoi un mesaj de confirmare catre clienti (`FILES OK`).
-
-###
+- Initial, trackerul primeste informatii de la clienti (`add_files_to_tracker_database`).
 - Cat timp programul ruleaza, tracker-ul poate primi cereri de tipul `OWNERS REQ`, urmate de numele unui fisier, la care raspunde prin a trimite clientului informatii: numarul de segmente, clientii care detin fiecare segment, si indexul segmentului in fisier.
 - In cazul in care primeste un mesaj de tip `READY`, inseamna ca un client si-a terminat de completat fisierele si il marcheaza in vector.
-- Daca toti clientii au terminat, trimite mesajul `DONE` catre toate thread-urile de upload, pentru a le anunta ca isi pot termina executia.
+- Daca toti clientii au terminat de downloadat, trimite un mesaj sa ii notifice pentru a le opri  executia (`send_done_message`).
+
+### **add_files_to_tracker_database**
+- Trackerul primeste informatii despre fisiere de la clienti si le completeaza in baza de date, trimitand apoi un mesaj de confirmare catre clienti (`FILES OK`).
+
+### **send_done_message**
+- Trimite mesajul `DONE` catre toate thread-urile de upload, pentru a le anunta ca isi pot termina executia.
 
 ## ***PEER:***
 
