@@ -27,8 +27,6 @@ typedef struct {
     char filename[MAX_FILENAME];
     chunk_info chunks[MAX_CHUNKS];
     int chunks_count;
-    int seed[100];
-    int seed_count;
 } file_info;
 
 
@@ -227,8 +225,6 @@ void add_files_to_tracker_database(int numtasks, int rank) {
             MPI_Recv(&chunks, 1, MPI_INT, i, FILE_INFO_TAG, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 
             // complete file structure
-            files[files_count].seed_count = 0;
-            files[files_count].seed[files[files_count].seed_count++] = i;
             strcpy(files[files_count].filename, filename);
             files[files_count].chunks_count = 0;
 
