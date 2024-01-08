@@ -294,6 +294,7 @@ void tracker(int numtasks, int rank) {
             for(int i = 0; i < files_count; i++) {
                 if (strcmp(files[i].filename, filename_req) == 0) {
                     MPI_Send(&files[i], sizeof(file_info), MPI_BYTE, status.MPI_SOURCE, TRACKER_RESPONSE_TAG, MPI_COMM_WORLD);
+                    break;
                 }
             }
         }
