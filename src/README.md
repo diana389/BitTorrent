@@ -1,4 +1,5 @@
 # Protocolul BitTorrent (tema3 - APD)
+## Stefan Diana - 332CC
 
 Programul consta in implementarea unui tracker si a unor clienti cu 3 posibile roluri: seed, peer, leecher.
 
